@@ -3,8 +3,8 @@ import { BiRun } from "react-icons/bi";
 
 const AboutUsPage = () => {
   return (
-    <div className="flex justify-center items-center p-4 bg-gray-50 flex-col">
-      <div className="flex flex-col space-y-7 w-full max-w-7xl text-center p-8 bg-orange-600 ">
+    <div className="flex justify-center items-center m-0 p-0 flex-col">
+      <div className="flex flex-col space-y-7 w-full max-w-7xl text-center p-10 bg-orange-600 ">
         <div>
           <h2 className="text-4xl font-bold text-white text-left">CLASSIC ARABIAN MANDI</h2>
         </div>
@@ -23,7 +23,7 @@ const AboutUsPage = () => {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 space-y-7 w-full max-w-7xl text-center p-8 bg-blue-700 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 space-y-7 w-full max-w-7xl text-center p-10 bg-blue-700 ">
         <div className=''>
           <h2 className="text-4xl font-bold text-white text-left">OUR STORY</h2>
           {/* Heading */}

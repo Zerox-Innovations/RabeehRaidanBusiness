@@ -8,6 +8,7 @@ import AboutUsPage from './AboutUsPage';
 import Gallery from './Gallery';
 import videobg from '../assets/video.mp4'
 
+
 const HomePage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const navigate = useNavigate(); // Hook for navigation
@@ -73,12 +74,17 @@ const HomePage = () => {
           </div>
         )}
       </div>
-        
-        <AboutUsPage/>
 
-        <DeliveryPage /> {/* Delivery Page Section */}
+      <div className="flex flex-col m-0 p-0 w-full">
+        <AboutUsPage />
+        <ContactUs />
+      </div>
 
-        <ContactUs /> {/* Contact Us Section */}
+      <div className="flex justify-center mt-4">
+        <button onClick={openModal} className="bg-orange-500 text-white font-sans text-lg px-6 py-3 rounded-lg hover:bg-orange-600 transition duration-300">
+          VIEW MENU
+        </button>
+      </div>
     </div>
   );
 };

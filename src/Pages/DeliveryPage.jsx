@@ -6,12 +6,12 @@ import { GiWallet } from "react-icons/gi";
 const DeliveryPage = () => {
   return (
     <>
-      <div className="flex justify-center items-center mt-5 lg:ml-12">
+      <div className="flex justify-center items-center mt-5 lg:ml-12 bg-red-700">
         <div className="flex flex-col md:flex-row items-center justify-center  mb-5 sm:mt-5">
           {/* Left Column */}
           <div className="md:w-1/2 flex flex-col space-y-12 text-center md:text-left ">
             {/* Heading */}
-            <div className="">
+            <div className="mt-3">
               <h1 className="text-4xl md:text-5xl font-bold text-black leading-snug ">
                 Delicious Food and Quick <br /> Delivery Together
               </h1>
