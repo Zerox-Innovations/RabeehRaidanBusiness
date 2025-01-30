@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-softBlue flex flex-col items-center text-center py-8 sm:py-12 lg:py-16">
       {/* Logo */}
-      <img src="images/raidanLogo.png" className="h-16 mb-4" alt="Raidan Logo" />
+      <img src="images/raidanLogo.webp" className="h-16 mb-4" alt="Raidan Logo" />
 
       {/* Copyright */}
       <p className="text-white text-sm sm:text-base">

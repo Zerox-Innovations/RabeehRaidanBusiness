@@ -3,7 +3,9 @@ import React, { useState } from "react";
 const MenuList = ({ menu }) => {
   return (
     <div className="w-full">
-      <h2 className="text-3xl font-bold mb-6 text-green-500 p-3 text-center">Menu</h2>
+      <div className="justify-center flex items-center">
+        <img src="/images/RRmenu.png" className="h-72" alt="" />
+      </div>
 
       {Object.keys(menu).map((category) => (
         <div key={category} className="mb-10">
@@ -29,7 +31,7 @@ const AsianCuisineSection = ({ asianCuisine }) => {
 
   const toggleDropdown = (index) => {
     setDropdownStates((prevState) =>
-      prevState.map((state, i) => (i === index ? !state : state)) 
+      prevState.map((state, i) => (i === index ? !state : state))
     );
   };
 

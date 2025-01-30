@@ -4,7 +4,7 @@ import { BiRun } from "react-icons/bi";
 const AboutUsPage = () => {
   return (
     <div className="flex justify-center items-center flex-col">
-      <div className="flex flex-col space-y-7 w-full max-w-7xl text-center p-10 bg-orange-600 ">
+      <div className="flex flex-col space-y-7 w-full max-w-7xl text-center p-10 bg-lime-900 ">
         <div>
           <h2 className="text-4xl font-bold text-white text-left">CLASSIC ARABIAN MANDI</h2>
         </div>

@@ -14,12 +14,12 @@ const Navbar = () => {
   return (
     <div>
       {/* Navbar Container */}
-      <nav className={`absolute top-0 left-0 w-full flex justify-center items-center py-16 px-4 mt-12 ${getNavbarBgColor()} transition-all duration-300 z-10`}>
+      <nav className={`absolute top-0 left-0 w-full flex justify-center items-center py-16 px-4 mt-12 ${getNavbarBgColor()} transition-all duration-300 z-40`}>
         <div className="flex md:flex-col justify-between items-center w-full max-w-5xl space-y-4 md:space-y-0">
           {/* Logo */}
           <a href="/" className="flex-shrink-0 md:mb-8 ">
             <img
-              src="/images/raidanLogo.png"
+              src="/images/raidanLogo.webp"
               alt="Raiden Logo"
               className="h-16"
             />
@@ -27,19 +27,19 @@ const Navbar = () => {
 
           {/* Links */}
           <div className="hidden md:flex space-x-6 font-sans">
-            <a href="/" className="text-white text-lg font-bold hover:text-yellow-300">
+            <a href="/" className="text-softYellow text-lg font-bold hover:text-yellow-300">
               HOME
             </a>
-            <a href="#" className="text-white text-lg font-bold hover:text-yellow-300">
+            <a href="aboutus" className="text-softYellow text-lg font-bold hover:text-yellow-300">
               ABOUT
             </a>
-            <a href="/find-us" className="text-white text-lg font-bold hover:text-yellow-300">
+            <a href="/find-us" className="text-softYellow text-lg font-bold hover:text-yellow-300">
               FIND US
             </a>
-            <a href="#" className="text-white text-lg font-bold hover:text-yellow-300">
+            <a href="gallery" className="text-softYellow text-lg font-bold hover:text-yellow-300">
               GALLERY
             </a>
-            <a href="/contact" className="text-white text-lg font-bold hover:text-yellow-300">
+            <a href="/contact" className="text-softYellow text-lg font-bold hover:text-yellow-300">
               CONTACT
             </a>
           </div>
@@ -76,12 +76,12 @@ const Navbar = () => {
 
       {/* Mobile Menu Sliding from Left */}
       <div
-        className={`fixed top-0 left-0 w-3/4 h-full bg-blue-700 text-white transition-transform duration-300 ease-in-out p-8 py-10 ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}
+        className={`fixed top-0 left-0 w-3/4 h-full bg-softYellow text-white transition-transform duration-300 ease-in-out p-8 py-10 z-50 ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}
       >
         {/* Close Icon */}
         <button
           onClick={() => setIsMenuOpen(false)} // Close the menu when clicked
-          className="absolute top-4 right-4 text-white focus:outline-none"
+          className="absolute top-4 right-4 text-white focus:outline-none bg-gray-700 p-2 rounded-sm"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -99,20 +99,20 @@ const Navbar = () => {
           </svg>
         </button>
 
-        <div className="space-y-8 py-4 px-4 font-bold font sans">
-          <a href="#" className="block hover:text-gray-300">
+        <div className="space-y-8 text-xl py-4 px-4 font-bold font sans">
+          <a href="/" className="block text-softOrange">
             HOME
           </a>
-          <a href="#" className="block hover:text-gray-300">
+          <a href="/aboutus" className="block text-softOrange">
             ABOUT US
           </a>
-          <a href="#" className="block hover:text-gray-300">
+          <a href="/find-us" className="block text-softOrange">
             FIND US
           </a>
-          <a href="#" className="block hover:text-gray-300">
+          <a href="gallery" className="block text-softOrange">
             GALLERY
           </a>
-          <a href="#" className="block hover:text-gray-300">
+          <a href="contact" className="block text-softOrange">
             CONTACT
           </a>
         </div>
