@@ -4,17 +4,17 @@ import { IoLogoInstagram } from "react-icons/io5";
 const ContactUs = () => {
   return (
     <>
-      <div className="flex justify-center items-center m-0 p-0  mb-5 ">
+      <div className="flex justify-center items-center  mb-5 ">
         <div className="flex flex-col md:flex-row w-full gap-0 max-w-7xl">
           {/* Left: Contact Form (Amber background) */}
-          <div className="flex-1 bg-amber-400 p-8">
+          <div className="flex-1 bg-softOrange p-8">
             <h2 className="text-4xl font-bold text-white mb-6 text-center md:text-left font-sans">
               Get in Touch
             </h2>
             <form>
               {/* Name Input */}
               <div className="mb-4">
-                <label className="block text-gray-700 text-sm font-bold mb-2">
+                <label className="block text-white text-sm font-bold mb-2">
                   Your Name
                 </label>
                 <input
@@ -26,7 +26,7 @@ const ContactUs = () => {
 
               {/* Email Input */}
               <div className="mb-4">
-                <label className="block text-gray-700 text-sm font-bold mb-2">
+                <label className="block text-white text-sm font-bold mb-2">
                   Email Address
                 </label>
                 <input
@@ -38,7 +38,7 @@ const ContactUs = () => {
 
               {/* Message Input */}
               <div className="mb-6">
-                <label className="block text-gray-700 text-sm font-bold mb-2">
+                <label className="block text-white text-sm font-bold mb-2">
                   Message
                 </label>
                 <textarea
@@ -51,18 +51,20 @@ const ContactUs = () => {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300 w-full sm:w-auto"
+                className="text-white px-4 font-sans font-bold py-2 rounded-lg transition duration-300 w-full sm:w-auto border-2 border-white "
               >
-                Send Message
+                SEND MESSAGE
               </button>
             </form>
           </div>
 
           {/* Right: Instagram Section (Lime background) */}
-          <div className="w-full md:w-2/5 bg-lime-500 flex justify-center items-center text-center space-y-5">
-            <div className="font-sans text-center">
-              <p className="font-bold text-white text-5xl">FOLLOW US <br /> ON INSTAGRAM</p>
-              <span className="text-7xl text-white flex justify-center items-center mt-5">
+          <div className="w-full sm:w-3/4 md:w-2/5 bg-yellow-400 flex flex-col justify-center items-center text-center p-8 space-y-4">
+            <div className="font-sans">
+              <p className="font-bold text-white text-4xl md:text-5xl">
+                FOLLOW US <br /> ON INSTAGRAM
+              </p>
+              <span className="text-6xl md:text-7xl text-white flex justify-center items-center mt-5">
                 <IoLogoInstagram />
               </span>
             </div>
