@@ -164,9 +164,19 @@
           "half": 560,
           "3/4": 840,
           "full": 1100
+          }
+        },
+        {
+          "item": "Mandi Rice Only",
+          "image": "/images/muttonmandi.webp",
+          "portions": {
+            "Qtr": 90,
+            "half": 160,
+            "3/4": 240,
+            "full": 320
+          }
         }
-        }
-          ],
+        ],
           
         "Broasted Chicken": [
           {
@@ -347,6 +357,16 @@
               "3/4": 840,
               "full": 1100
             }
+            },
+            {
+              "item": "Mandi Rice Only",
+              "image": "/images/muttonmandi.webp",
+              "portions": {
+                "Qtr": 90,
+                "half": 160,
+                "3/4": 240,
+                "full": 320
+              }
             }
           ],
         "Broasted Chicken": [
@@ -580,6 +600,16 @@
           "3/4": 840,
           "full": 1100
         }
+        },
+        {
+          "item": "Mandi Rice Only",
+          "image": "/images/muttonmandi.webp",
+          "portions": {
+            "Qtr": 90,
+            "half": 160,
+            "3/4": 240,
+            "full": 320
+          }
         }
           ],
           
@@ -762,6 +792,16 @@
           "3/4": 840,
           "full": 1100
         }
+        },
+        {
+          "item": "Mandi Rice Only",
+          "image": "/images/muttonmandi.webp",
+          "portions": {
+            "Qtr": 90,
+            "half": 160,
+            "3/4": 240,
+            "full": 320
+          }
         }
           ],
           
@@ -901,6 +941,16 @@
                 "half": 460,
                 "3/4": 690,
                 "full": 920
+              }
+            },
+            {
+              "item": "Mandi Rice Only",
+              "image": "/images/muttonmandi.webp",
+              "portions": {
+                "Qtr": 90,
+                "half": 160,
+                "3/4": 240,
+                "full": 320
               }
             }
           ],
@@ -1083,6 +1133,16 @@
           "3/4": 840,
           "full": 1100
         }
+        },
+        {
+          "item": "Mandi Rice Only",
+          "image": "/images/muttonmandi.webp",
+          "portions": {
+            "Qtr": 90,
+            "half": 160,
+            "3/4": 240,
+            "full": 320
+          }
         }
           ],
           
@@ -1266,6 +1326,16 @@
           "3/4": 840,
           "full": 1100
         }
+        },
+        {
+          "item": "Mandi Rice Only",
+          "image": "/images/muttonmandi.webp",
+          "portions": {
+            "Qtr": 90,
+            "half": 160,
+            "3/4": 240,
+            "full": 320
+          }
         }
           ],
           
@@ -1448,6 +1518,16 @@
           "3/4": 840,
           "full": 1100
         }
+        },
+        {
+          "item": "Mandi Rice Only",
+          "image": "/images/muttonmandi.webp",
+          "portions": {
+            "Qtr": 90,
+            "half": 160,
+            "3/4": 240,
+            "full": 320
+          }
         }
           ],
           
