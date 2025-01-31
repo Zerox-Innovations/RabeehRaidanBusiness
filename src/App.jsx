@@ -9,6 +9,7 @@ import Locations from "./Pages/Locations";
 import Navbar from "./Pages/Navbar";
 import Footer from "./Pages/Footer";
 import Gallery from "./Pages/Gallery";
+import WhoWeAre from "./Pages/WhoWeAre";
 
 function App() {
   return (
@@ -23,20 +24,20 @@ function AppContent() {
 
   return (
     <>
-      {/* Conditionally render Navbar based on current route */}
-      {location.pathname !== "/menu/:id" && <Navbar />}
+      {/* Hide Navbar on MenuPage */}
+      {!location.pathname.startsWith("/menu") && <Navbar />}
 
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/menu/:id" element={<MenuPage />} />
         <Route path="/contact" element={<ContactUs />} />
-        <Route path="/aboutus" element={<AboutUsPage />} />
+        <Route path="/aboutus" element={<WhoWeAre />} />
         <Route path="/delivery" element={<DeliveryPage />} />
         <Route path="/find-us" element={<Locations />} />
         <Route path="/gallery" element={<Gallery />} />
       </Routes>
 
-      <Footer />
+      {!location.pathname.startsWith("/menu") && <Footer />}
     </>
   );
 }

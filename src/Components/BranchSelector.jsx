@@ -3,7 +3,7 @@ import React from "react";
 const BranchSelector = ({ branches, onSelectBranch }) => {
   return (
     <>
-      <div>
+      <div className="p-6 max-w-2xl">
         <ul>
           {branches.map((branch) => (
             <li
@@ -11,7 +11,7 @@ const BranchSelector = ({ branches, onSelectBranch }) => {
               className="mb-2 p-1 bg-cream-100 rounded-lg cursor-pointer"
               onClick={() => onSelectBranch(branch.id)}
             >
-              <h3 className="text-xl font-bold text-gray-900">{branch.name}</h3>
+              <h2 className="text-2xl font-bold text-softOrange">{branch.name}</h2>
             </li>
           ))}
         </ul>

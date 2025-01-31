@@ -15,7 +15,7 @@
 .scrolling-text {
   display: flex;
   white-space: nowrap;
-  animation: scroll-left 150s linear infinite ; /* Adjust speed as needed */
+  animation: scroll-left 480s linear infinite ; /* Adjust speed as needed */
 }
 
 /* Styling for each text item */
@@ -30,9 +30,9 @@
   0% {
     transform: translateX(0); /* Start with the text at the beginning of the container */
   }
-  /* 50% {
+  50% {
     transform: translateX(-50%); 
-  } */
+  }
   100% {
     transform: translateX(-100%); /* End of scroll: all the way off the screen */
   }
