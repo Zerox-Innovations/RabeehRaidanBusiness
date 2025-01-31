@@ -6,181 +6,180 @@
       "description": "A supper mandhi",
       "menu": {
        "Special Arabian Mandi": [
-            {
-              "item": "Chicken Mandi",
-              "image": "/images/chickenmandi.webp",
-              "portions": {
-                "Qtr": 170,
-                "half": 340,
-                "3/4": 510,
-                "full": 650
-              }
-            },
-            {
-              "item": "Alfham Mandi",
-              "image": "/images/alfammandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Mutton Mandi",
-              "image": "/images/muttonmandi.webp",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Chicken Pollichath Mandi",
-              "image": "/images/pollichathmandi.webp",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Shawaya Mandi",
-              "image": "/images/shawwaya.webp",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Honey Chilly Mandi",
-              "image": "/images/honeymandi.webp",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Kanthari Alfham Mandi",
-              "image": "/images/kantharimandi.webp",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Peri Peri Alfham Mandi",
-              "image": "/images/perperimandi.webp",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Beef Pollichath Mandi",
-              "image": "/images/perperimandi.webp",
-              "portions": {
-                "Qtr": 230,
-                "half": 460,
-                "3/4": 690,
-                "full": 890
-              }
-            },
-            {
-              "item": "Beef Kanthari Mandi",
-              "image": "/images/perperimandi.webp",
-              "portions": {
-                "Qtr": 230,
-                "half": 460,
-                "3/4": 690,
-                "full": 890
-              }
-            },
-            {
-              "item": "Madhooth",
-              "image": "/images/madhooth.webp",
-              "portions": {
-                "Qtr": 230,
-                "half": 460,
-                "3/4": 690,
-                "full": 890
-              }
-            }
+        {
+          "item": "Chicken Mandi",
+          "image": "/images/chickenmandi.webp",
+          "portions": {
+            "Qtr": 170,
+            "half": 340,
+            "3/4": 510,
+            "full": 650
+          },
+          "mandiChickenOnly": {
+          "Qtr": 100,
+          "half": 200,
+          "3/4": 300,
+          "full": 400
+        }
+        },
+        {
+          "item": "Alfham Mandi",
+          "image": "/images/alfammandi.png",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 120,
+          "half": 240,
+          "3/4": 360,
+          "full": 480
+        }
+        },
+        {
+          "item": "Chicken Pollichath Mandi",
+          "image": "/images/pollichathmandi.webp",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 120,
+          "half": 240,
+          "3/4": 360,
+          "full": 480
+        }
+        },
+        {
+          "item": "Shawaya Mandi",
+          "image": "/images/shawwaya.webp",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 120,
+          "half": 240,
+          "3/4": 360,
+          "full": 480
+        }
+        },
+        {
+          "item": "Kanthari Alfham Mandi",
+          "image": "/images/kantharimandi.webp",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 120,
+          "half": 240,
+          "3/4": 360,
+          "full": 480
+        }
+        },
+        {
+          "item": "Peri Peri Alfham Mandi",
+          "image": "/images/perperimandi.webp",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 130,
+          "half": 260,
+          "3/4": 390,
+          "full": 480
+        }
+        },
+        {
+          "item": "Honey Chicken Mandi",
+          "image": "/images/honeymandi.webp",
+          "portions": {
+            "Qtr": 200,
+            "half": 390,
+            "3/4": 590,
+            "full": 760
+          },
+          "mandiChickenOnly": {
+          "Qtr": 130,
+          "half": 260,
+          "3/4": 390,
+          "full": 480
+        }
+        },
+        {
+          "item": "Beef Pollichath Mandi",
+          "image": "/images/beefmandi.webp",
+          "portions": {
+            "Qtr": 230,
+            "half": 460,
+            "3/4": 690,
+            "full": 890
+          },
+          "mandiChickenOnly": {
+          "Qtr": 150,
+          "half": 300,
+          "3/4": 450,
+          "full": 600
+        }
+        },
+        {
+          "item": "Beef Kanthari Mandi",
+          "image": "/images/beefmandi.webp",
+          "portions": {
+            "Qtr": 230,
+            "half": 460,
+            "3/4": 690,
+            "full": 890
+          },
+          "mandiChickenOnly": {
+          "Qtr": 150,
+          "half": 300,
+          "3/4": 450,
+          "full": 600
+        }
+        },
+        {
+          "item": "Mutton Mandi",
+          "image": "/images/muttonmandi.webp",
+          "portions": {
+            "Qtr": 350,
+            "half": 700,
+            "3/4": 1050,
+            "full": 1300
+          },
+          "mandiChickenOnly": {
+          "Qtr": 280,
+          "half": 560,
+          "3/4": 840,
+          "full": 1100
+        }
+        }
           ],
-        "Chicken Broasted": [
+          
+        "Broasted Chicken": [
           {
             "item": "Chicken Broasted",
-            "image": "/images/chickenbroasted.png",
-            "price": 250
-          },
-          {
-            "item": "Spicy Chicken Broasted",
-            "image": "/images/spicybroasted.png",
-            "price": 270
+            "image": "/images/broast.png",
+            "portions": {
+                "Qtr": 130,
+                "half": 260,
+                "3/4": 390,
+                "full": 500
+              }
           }
-        ],
-        "asianCuisine": {
-          "heading":"Asian Cuisine",
-          "categories": [
-            {
-              "name": "Fried Rice",
-              "items": [
-                {
-                  "name": "Veg Fried Rice",
-                  "price": 140
-                },
-                {
-                  "name": "Egg Fried Rice",
-                  "price": 160
-                },
-                {
-                  "name": "Chicken Fried Rice",
-                  "price": 180
-                }
-              ]
-            },
-            {
-              "name": "Noodles",
-              "items": [
-                {
-                  "name": "Veg Noodles",
-                  "price": 140
-                },
-                {
-                  "name": "Egg Noodles",
-                  "price": 160
-                },
-                {
-                  "name": "Chicken Noodles",
-                  "price": 180
-                }
-              ]
-            },
-            {
-              "name": "Chicken Dishes",
-              "items": [
-                {
-                  "name": "Garlic Chicken",
-                  "price": 140
-                },
-                {
-                  "name": "Chicken Kondattam",
-                  "price": 140
-                }
-              ]
-            }
-          ]
-        }
+        ]
       }
     },
     {
@@ -191,13 +190,19 @@
        "Special Arabian Mandi": [
             {
               "item": "Chicken Mandi",
-              "image": "/images/chickenmandi.png",
+              "image": "/images/chickenmandi.webp",
               "portions": {
                 "Qtr": 170,
                 "half": 340,
                 "3/4": 510,
                 "full": 650
-              }
+              },
+              "mandiChickenOnly": {
+              "Qtr": 100,
+              "half": 200,
+              "3/4": 300,
+              "full": 400
+            }
             },
             {
               "item": "Alfham Mandi",
@@ -207,99 +212,153 @@
                 "half": 380,
                 "3/4": 570,
                 "full": 720
-              }
-            },
-            {
-              "item": "Mutton Mandi",
-              "image": "/images/alfammandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
+              },
+              "mandiChickenOnly": {
+              "Qtr": 120,
+              "half": 240,
+              "3/4": 360,
+              "full": 480
+            }
             },
             {
               "item": "Chicken Pollichath Mandi",
-              "image": "/images/pollichathmandi.png",
+              "image": "/images/pollichathmandi.webp",
               "portions": {
                 "Qtr": 190,
                 "half": 380,
                 "3/4": 570,
                 "full": 720
-              }
+              },
+              "mandiChickenOnly": {
+              "Qtr": 120,
+              "half": 240,
+              "3/4": 360,
+              "full": 480
+            }
             },
             {
               "item": "Shawaya Mandi",
-              "image": "/images/shawwaya.png",
+              "image": "/images/shawwaya.webp",
               "portions": {
                 "Qtr": 190,
                 "half": 380,
                 "3/4": 570,
                 "full": 720
-              }
-            },
-            {
-              "item": "Honey Chilly Mandi",
-              "image": "/images/honeymandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
+              },
+              "mandiChickenOnly": {
+              "Qtr": 120,
+              "half": 240,
+              "3/4": 360,
+              "full": 480
+            }
             },
             {
               "item": "Kanthari Alfham Mandi",
-              "image": "/images/kantharimandi.png",
+              "image": "/images/kantharimandi.webp",
               "portions": {
                 "Qtr": 190,
                 "half": 380,
                 "3/4": 570,
                 "full": 720
-              }
+              },
+              "mandiChickenOnly": {
+              "Qtr": 120,
+              "half": 240,
+              "3/4": 360,
+              "full": 480
+            }
             },
             {
               "item": "Peri Peri Alfham Mandi",
-              "image": "/images/perperimandi.png",
+              "image": "/images/perperimandi.webp",
               "portions": {
                 "Qtr": 190,
                 "half": 380,
                 "3/4": 570,
                 "full": 720
-              }
+              },
+              "mandiChickenOnly": {
+              "Qtr": 130,
+              "half": 260,
+              "3/4": 390,
+              "full": 480
+            }
+            },
+            {
+              "item": "Honey Chicken Mandi",
+              "image": "/images/honeymandi.webp",
+              "portions": {
+                "Qtr": 200,
+                "half": 390,
+                "3/4": 590,
+                "full": 760
+              },
+              "mandiChickenOnly": {
+              "Qtr": 130,
+              "half": 260,
+              "3/4": 390,
+              "full": 480
+            }
             },
             {
               "item": "Beef Pollichath Mandi",
-              "image": "/images/perperimandi.png",
+              "image": "/images/beefmandi.webp",
               "portions": {
                 "Qtr": 230,
                 "half": 460,
                 "3/4": 690,
                 "full": 890
-              }
+              },
+              "mandiChickenOnly": {
+              "Qtr": 150,
+              "half": 300,
+              "3/4": 450,
+              "full": 600
+            }
             },
             {
               "item": "Beef Kanthari Mandi",
-              "image": "/images/perperimandi.png",
+              "image": "/images/beefmandi.webp",
               "portions": {
                 "Qtr": 230,
                 "half": 460,
                 "3/4": 690,
                 "full": 890
-              }
+              },
+              "mandiChickenOnly": {
+              "Qtr": 150,
+              "half": 300,
+              "3/4": 450,
+              "full": 600
+            }
+            },
+            {
+              "item": "Mutton Mandi",
+              "image": "/images/muttonmandi.webp",
+              "portions": {
+                "Qtr": 350,
+                "half": 700,
+                "3/4": 1050,
+                "full": 1300
+              },
+              "mandiChickenOnly": {
+              "Qtr": 280,
+              "half": 560,
+              "3/4": 840,
+              "full": 1100
+            }
             }
           ],
-        "Chicken Broasted": [
+        "Broasted Chicken": [
           {
             "item": "Chicken Broasted",
-            "image": "/images/chickenbroasted.png",
-            "price": 250
-          },
-          {
-            "item": "Spicy Chicken Broasted",
-            "image": "/images/spicybroasted.png",
-            "price": 270
+            "image": "/images/broast.png",
+            "portions": {
+                "Qtr": 130,
+                "half": 260,
+                "3/4": 390,
+                "full": 500
+              }
           }
         ],
         "asianCuisine": {
@@ -362,171 +421,180 @@
       "description": "A supper mandhi",
       "menu": {
        "Special Arabian Mandi": [
-            {
-              "item": "Chicken Mandi",
-              "image": "/images/chickenmandi.png",
-              "portions": {
-                "Qtr": 170,
-                "half": 340,
-                "3/4": 510,
-                "full": 650
-              }
-            },
-            {
-              "item": "Alfham Mandi",
-              "image": "/images/alfammandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Mutton Mandi",
-              "image": "/images/alfammandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Chicken Pollichath Mandi",
-              "image": "/images/pollichathmandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Shawaya Mandi",
-              "image": "/images/shawwaya.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Honey Chilly Mandi",
-              "image": "/images/honeymandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Kanthari Alfham Mandi",
-              "image": "/images/kantharimandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Peri Peri Alfham Mandi",
-              "image": "/images/perperimandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Beef Pollichath Mandi",
-              "image": "/images/perperimandi.png",
-              "portions": {
-                "Qtr": 230,
-                "half": 460,
-                "3/4": 690,
-                "full": 890
-              }
-            },
-            {
-              "item": "Beef Kanthari Mandi",
-              "image": "/images/perperimandi.png",
-              "portions": {
-                "Qtr": 230,
-                "half": 460,
-                "3/4": 690,
-                "full": 890
-              }
-            }
+        {
+          "item": "Chicken Mandi",
+          "image": "/images/chickenmandi.webp",
+          "portions": {
+            "Qtr": 170,
+            "half": 340,
+            "3/4": 510,
+            "full": 650
+          },
+          "mandiChickenOnly": {
+          "Qtr": 100,
+          "half": 200,
+          "3/4": 300,
+          "full": 400
+        }
+        },
+        {
+          "item": "Alfham Mandi",
+          "image": "/images/alfammandi.png",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 120,
+          "half": 240,
+          "3/4": 360,
+          "full": 480
+        }
+        },
+        {
+          "item": "Chicken Pollichath Mandi",
+          "image": "/images/pollichathmandi.webp",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 120,
+          "half": 240,
+          "3/4": 360,
+          "full": 480
+        }
+        },
+        {
+          "item": "Shawaya Mandi",
+          "image": "/images/shawwaya.webp",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 120,
+          "half": 240,
+          "3/4": 360,
+          "full": 480
+        }
+        },
+        {
+          "item": "Kanthari Alfham Mandi",
+          "image": "/images/kantharimandi.webp",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 120,
+          "half": 240,
+          "3/4": 360,
+          "full": 480
+        }
+        },
+        {
+          "item": "Peri Peri Alfham Mandi",
+          "image": "/images/perperimandi.webp",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 130,
+          "half": 260,
+          "3/4": 390,
+          "full": 480
+        }
+        },
+        {
+          "item": "Honey Chicken Mandi",
+          "image": "/images/honeymandi.webp",
+          "portions": {
+            "Qtr": 200,
+            "half": 390,
+            "3/4": 590,
+            "full": 760
+          },
+          "mandiChickenOnly": {
+          "Qtr": 130,
+          "half": 260,
+          "3/4": 390,
+          "full": 480
+        }
+        },
+        {
+          "item": "Beef Pollichath Mandi",
+          "image": "/images/beefmandi.webp",
+          "portions": {
+            "Qtr": 230,
+            "half": 460,
+            "3/4": 690,
+            "full": 890
+          },
+          "mandiChickenOnly": {
+          "Qtr": 150,
+          "half": 300,
+          "3/4": 450,
+          "full": 600
+        }
+        },
+        {
+          "item": "Beef Kanthari Mandi",
+          "image": "/images/beefmandi.webp",
+          "portions": {
+            "Qtr": 230,
+            "half": 460,
+            "3/4": 690,
+            "full": 890
+          },
+          "mandiChickenOnly": {
+          "Qtr": 150,
+          "half": 300,
+          "3/4": 450,
+          "full": 600
+        }
+        },
+        {
+          "item": "Mutton Mandi",
+          "image": "/images/muttonmandi.webp",
+          "portions": {
+            "Qtr": 350,
+            "half": 700,
+            "3/4": 1050,
+            "full": 1300
+          },
+          "mandiChickenOnly": {
+          "Qtr": 280,
+          "half": 560,
+          "3/4": 840,
+          "full": 1100
+        }
+        }
           ],
-        "Chicken Broasted": [
+          
+        "Broasted Chicken": [
           {
             "item": "Chicken Broasted",
-            "image": "/images/chickenbroasted.png",
-            "price": 250
-          },
-          {
-            "item": "Spicy Chicken Broasted",
-            "image": "/images/spicybroasted.png",
-            "price": 270
+            "image": "/images/broast.png",
+            "portions": {
+                "Qtr": 130,
+                "half": 260,
+                "3/4": 390,
+                "full": 500
+              }
           }
-        ],
-        "asianCuisine": {
-          "heading":"Asian Cuisine",
-          "categories": [
-            {
-              "name": "Fried Rice",
-              "items": [
-                {
-                  "name": "Veg Fried Rice",
-                  "price": 140
-                },
-                {
-                  "name": "Egg Fried Rice",
-                  "price": 160
-                },
-                {
-                  "name": "Chicken Fried Rice",
-                  "price": 180
-                }
-              ]
-            },
-            {
-              "name": "Noodles",
-              "items": [
-                {
-                  "name": "Veg Noodles",
-                  "price": 140
-                },
-                {
-                  "name": "Egg Noodles",
-                  "price": 160
-                },
-                {
-                  "name": "Chicken Noodles",
-                  "price": 180
-                }
-              ]
-            },
-            {
-              "name": "Chicken Dishes",
-              "items": [
-                {
-                  "name": "Garlic Chicken",
-                  "price": 140
-                },
-                {
-                  "name": "Chicken Kondattam",
-                  "price": 140
-                }
-              ]
-            }
-          ]
-        }
+        ]
       }
     },
     {
@@ -535,171 +603,180 @@
       "description": "A supper mandhi",
       "menu": {
        "Special Arabian Mandi": [
-            {
-              "item": "Chicken Mandi",
-              "image": "/images/chickenmandi.png",
-              "portions": {
-                "Qtr": 170,
-                "half": 340,
-                "3/4": 510,
-                "full": 650
-              }
-            },
-            {
-              "item": "Therattammal",
-              "image": "/images/alfammandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Mutton Mandi",
-              "image": "/images/alfammandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Chicken Pollichath Mandi",
-              "image": "/images/pollichathmandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Shawaya Mandi",
-              "image": "/images/shawwaya.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Honey Chilly Mandi",
-              "image": "/images/honeymandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Kanthari Alfham Mandi",
-              "image": "/images/kantharimandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Peri Peri Alfham Mandi",
-              "image": "/images/perperimandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Beef Pollichath Mandi",
-              "image": "/images/perperimandi.png",
-              "portions": {
-                "Qtr": 230,
-                "half": 460,
-                "3/4": 690,
-                "full": 890
-              }
-            },
-            {
-              "item": "Beef Kanthari Mandi",
-              "image": "/images/perperimandi.png",
-              "portions": {
-                "Qtr": 230,
-                "half": 460,
-                "3/4": 690,
-                "full": 890
-              }
-            }
+        {
+          "item": "Chicken Mandi",
+          "image": "/images/chickenmandi.webp",
+          "portions": {
+            "Qtr": 170,
+            "half": 340,
+            "3/4": 510,
+            "full": 650
+          },
+          "mandiChickenOnly": {
+          "Qtr": 100,
+          "half": 200,
+          "3/4": 300,
+          "full": 400
+        }
+        },
+        {
+          "item": "Alfham Mandi",
+          "image": "/images/alfammandi.png",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 120,
+          "half": 240,
+          "3/4": 360,
+          "full": 480
+        }
+        },
+        {
+          "item": "Chicken Pollichath Mandi",
+          "image": "/images/pollichathmandi.webp",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 120,
+          "half": 240,
+          "3/4": 360,
+          "full": 480
+        }
+        },
+        {
+          "item": "Shawaya Mandi",
+          "image": "/images/shawwaya.webp",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 120,
+          "half": 240,
+          "3/4": 360,
+          "full": 480
+        }
+        },
+        {
+          "item": "Kanthari Alfham Mandi",
+          "image": "/images/kantharimandi.webp",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 120,
+          "half": 240,
+          "3/4": 360,
+          "full": 480
+        }
+        },
+        {
+          "item": "Peri Peri Alfham Mandi",
+          "image": "/images/perperimandi.webp",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 130,
+          "half": 260,
+          "3/4": 390,
+          "full": 480
+        }
+        },
+        {
+          "item": "Honey Chicken Mandi",
+          "image": "/images/honeymandi.webp",
+          "portions": {
+            "Qtr": 200,
+            "half": 390,
+            "3/4": 590,
+            "full": 760
+          },
+          "mandiChickenOnly": {
+          "Qtr": 130,
+          "half": 260,
+          "3/4": 390,
+          "full": 480
+        }
+        },
+        {
+          "item": "Beef Pollichath Mandi",
+          "image": "/images/beefmandi.webp",
+          "portions": {
+            "Qtr": 230,
+            "half": 460,
+            "3/4": 690,
+            "full": 890
+          },
+          "mandiChickenOnly": {
+          "Qtr": 150,
+          "half": 300,
+          "3/4": 450,
+          "full": 600
+        }
+        },
+        {
+          "item": "Beef Kanthari Mandi",
+          "image": "/images/beefmandi.webp",
+          "portions": {
+            "Qtr": 230,
+            "half": 460,
+            "3/4": 690,
+            "full": 890
+          },
+          "mandiChickenOnly": {
+          "Qtr": 150,
+          "half": 300,
+          "3/4": 450,
+          "full": 600
+        }
+        },
+        {
+          "item": "Mutton Mandi",
+          "image": "/images/muttonmandi.webp",
+          "portions": {
+            "Qtr": 350,
+            "half": 700,
+            "3/4": 1050,
+            "full": 1300
+          },
+          "mandiChickenOnly": {
+          "Qtr": 280,
+          "half": 560,
+          "3/4": 840,
+          "full": 1100
+        }
+        }
           ],
-        "Chicken Broasted": [
+          
+        "Broasted Chicken": [
           {
             "item": "Chicken Broasted",
-            "image": "/images/chickenbroasted.png",
-            "price": 250
-          },
-          {
-            "item": "Spicy Chicken Broasted",
-            "image": "/images/spicybroasted.png",
-            "price": 270
+            "image": "/images/broast.png",
+            "portions": {
+                "Qtr": 130,
+                "half": 260,
+                "3/4": 390,
+                "full": 500
+              }
           }
-        ],
-        "asianCuisine": {
-          "heading":"Asian Cuisine",
-          "categories": [
-            {
-              "name": "Fried Rice",
-              "items": [
-                {
-                  "name": "Veg Fried Rice",
-                  "price": 140
-                },
-                {
-                  "name": "Egg Fried Rice",
-                  "price": 160
-                },
-                {
-                  "name": "Chicken Fried Rice",
-                  "price": 180
-                }
-              ]
-            },
-            {
-              "name": "Noodles",
-              "items": [
-                {
-                  "name": "Veg Noodles",
-                  "price": 140
-                },
-                {
-                  "name": "Egg Noodles",
-                  "price": 160
-                },
-                {
-                  "name": "Chicken Noodles",
-                  "price": 180
-                }
-              ]
-            },
-            {
-              "name": "Chicken Dishes",
-              "items": [
-                {
-                  "name": "Garlic Chicken",
-                  "price": 140
-                },
-                {
-                  "name": "Chicken Kondattam",
-                  "price": 140
-                }
-              ]
-            }
-          ]
-        }
+        ]
       }
     },
     {
@@ -710,169 +787,135 @@
        "Special Arabian Mandi": [
             {
               "item": "Chicken Mandi",
-              "image": "/images/chickenmandi.png",
+              "image": "/images/chickenmandi.webp",
               "portions": {
-                "Qtr": 170,
-                "half": 340,
-                "3/4": 510,
-                "full": 650
+                "Qtr": 150,
+                "half": 300,
+                "3/4": 450,
+                "full": 600
+              },
+              "mandiChickenOnly": {
+                "Qtr": 110,
+                "half": 220,
+                "3/4": 330,
+                "full": 430
               }
             },
             {
               "item": "Alfham Mandi",
               "image": "/images/alfammandi.png",
               "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Mutton Mandi",
-              "image": "/images/alfammandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Chicken Pollichath Mandi",
-              "image": "/images/pollichathmandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
+                "Qtr": 180,
+                "half": 340,
+                "3/4": 510,
+                "full": 680
+              },
+              "mandiChickenOnly": {
+                "Qtr": 110,
+                "half": 220,
+                "3/4": 330,
+                "full": 430
               }
             },
             {
               "item": "Shawaya Mandi",
-              "image": "/images/shawwaya.png",
+              "image": "/images/shawwaya.webp",
               "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
+                "Qtr": 180,
+                "half": 340,
+                "3/4": 510,
+                "full": 680
+              },
+              "mandiChickenOnly": {
+                "Qtr": 110,
+                "half": 220,
+                "3/4": 330,
+                "full": 430
               }
             },
             {
-              "item": "Honey Chilly Mandi",
-              "image": "/images/honeymandi.png",
+              "item": "Chicken Pollichath Mandi",
+              "image": "/images/pollichathmandi.webp",
               "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
+                "Qtr": 110,
+                "half": 220,
+                "3/4": 330,
+                "full": 430
               }
             },
             {
               "item": "Kanthari Alfham Mandi",
-              "image": "/images/kantharimandi.png",
+              "image": "/images/kantharimandi.webp",
               "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
+                "Qtr": 110,
+                "half": 220,
+                "3/4": 330,
+                "full": 430
+              }
+            },
+            {
+              "item": "Honey Chicken Mandi",
+              "image": "/images/honeymandi.webp",
+              "portions": {
+                "Qtr": 120,
+                "half": 240,
+                "3/4": 360,
+                "full": 470
               }
             },
             {
               "item": "Peri Peri Alfham Mandi",
               "image": "/images/perperimandi.png",
               "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
+                "Qtr": 120,
+                "half": 240,
+                "3/4": 360,
+                "full": 470
               }
             },
             {
               "item": "Beef Pollichath Mandi",
-              "image": "/images/perperimandi.png",
+              "image": "/images/beefmandi.webp",
               "portions": {
-                "Qtr": 230,
-                "half": 460,
-                "3/4": 690,
-                "full": 890
+                "Qtr": 140,
+                "half": 260,
+                "3/4": 390,
+                "full": 520
               }
             },
             {
               "item": "Beef Kanthari Mandi",
-              "image": "/images/perperimandi.png",
+              "image": "/images/beefmandi.webp",
               "portions": {
-                "Qtr": 230,
+                "Qtr": 140,
+                "half": 260,
+                "3/4": 390,
+                "full": 520
+              }
+            },
+            {
+              "item": "Mutton Mandi",
+              "image": "/images/muttonmandi.webp",
+              "portions": {
+                "Qtr": 240,
                 "half": 460,
                 "3/4": 690,
-                "full": 890
+                "full": 920
               }
             }
           ],
-        "Chicken Broasted": [
-          {
-            "item": "Chicken Broasted",
-            "image": "/images/chickenbroasted.png",
-            "price": 250
-          },
-          {
-            "item": "Spicy Chicken Broasted",
-            "image": "/images/spicybroasted.png",
-            "price": 270
-          }
-        ],
-        "asianCuisine": {
-          "heading":"Asian Cuisine",
-          "categories": [
+          "Broasted Chicken": [
             {
-              "name": "Fried Rice",
-              "items": [
-                {
-                  "name": "Veg Fried Rice",
-                  "price": 140
-                },
-                {
-                  "name": "Egg Fried Rice",
-                  "price": 160
-                },
-                {
-                  "name": "Chicken Fried Rice",
-                  "price": 180
+              "item": "Chicken Broasted",
+              "image": "/images/broast.png",
+              "portions": {
+                  "Qtr": 120,
+                  "half": 240,
+                  "3/4": 360,
+                  "full": 480
                 }
-              ]
-            },
-            {
-              "name": "Noodles",
-              "items": [
-                {
-                  "name": "Veg Noodles",
-                  "price": 140
-                },
-                {
-                  "name": "Egg Noodles",
-                  "price": 160
-                },
-                {
-                  "name": "Chicken Noodles",
-                  "price": 180
-                }
-              ]
-            },
-            {
-              "name": "Chicken Dishes",
-              "items": [
-                {
-                  "name": "Garlic Chicken",
-                  "price": 140
-                },
-                {
-                  "name": "Chicken Kondattam",
-                  "price": 140
-                }
-              ]
             }
           ]
-        }
       }
     },
     {
@@ -881,171 +924,181 @@
       "description": "A supper mandhi",
       "menu": {
        "Special Arabian Mandi": [
-            {
-              "item": "Chicken Mandi",
-              "image": "/images/chickenmandi.png",
-              "portions": {
-                "Qtr": 170,
-                "half": 340,
-                "3/4": 510,
-                "full": 650
-              }
-            },
-            {
-              "item": "Alfham Mandi",
-              "image": "/images/alfammandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Mutton Mandi",
-              "image": "/images/alfammandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Chicken Pollichath Mandi",
-              "image": "/images/pollichathmandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Shawaya Mandi",
-              "image": "/images/shawwaya.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Honey Chilly Mandi",
-              "image": "/images/honeymandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Kanthari Alfham Mandi",
-              "image": "/images/kantharimandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Peri Peri Alfham Mandi",
-              "image": "/images/perperimandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Beef Pollichath Mandi",
-              "image": "/images/perperimandi.png",
-              "portions": {
-                "Qtr": 230,
-                "half": 460,
-                "3/4": 690,
-                "full": 890
-              }
-            },
-            {
-              "item": "Beef Kanthari Mandi",
-              "image": "/images/perperimandi.png",
-              "portions": {
-                "Qtr": 230,
-                "half": 460,
-                "3/4": 690,
-                "full": 890
-              }
-            }
+        {
+          "item": "Chicken Mandi",
+          "image": "/images/chickenmandi.webp",
+          "portions": {
+            "Qtr": 170,
+            "half": 340,
+            "3/4": 510,
+            "full": 650
+          },
+          "mandiChickenOnly": {
+          "Qtr": 100,
+          "half": 200,
+          "3/4": 300,
+          "full": 400
+        }
+        },
+        {
+          "item": "Alfham Mandi",
+          "image": "/images/alfammandi.png",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 120,
+          "half": 240,
+          "3/4": 360,
+          "full": 480
+        }
+        },
+        {
+          "item": "Chicken Pollichath Mandi",
+          "image": "/images/pollichathmandi.webp",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 120,
+          "half": 240,
+          "3/4": 360,
+          "full": 480
+        }
+        },
+        {
+          "item": "Shawaya Mandi",
+          "image": "/images/shawwaya.webp",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 120,
+          "half": 240,
+          "3/4": 360,
+          "full": 480
+        }
+        },
+        {
+          "item": "Kanthari Alfham Mandi",
+          "image": "/images/kantharimandi.webp",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 120,
+          "half": 240,
+          "3/4": 360,
+          "full": 480
+        }
+        },
+        {
+          "item": "Peri Peri Alfham Mandi",
+          "image": "/images/perperimandi.webp",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 130,
+          "half": 260,
+          "3/4": 390,
+          "full": 480
+        }
+        },
+        {
+          "item": "Honey Chicken Mandi",
+          "image": "/images/honeymandi.webp",
+          "portions": {
+            "Qtr": 200,
+            "half": 390,
+            "3/4": 590,
+            "full": 760
+          },
+          "mandiChickenOnly": {
+          "Qtr": 130,
+          "half": 260,
+          "3/4": 390,
+          "full": 480
+        }
+        },
+        {
+          "item": "Beef Pollichath Mandi",
+          "image": "/images/beefmandi.webp",
+          "portions": {
+            "Qtr": 230,
+            "half": 460,
+            "3/4": 690,
+            "full": 890
+          },
+          "mandiChickenOnly": {
+          "Qtr": 150,
+          "half": 300,
+          "3/4": 450,
+          "full": 600
+        }
+        },
+        {
+          "item": "Beef Kanthari Mandi",
+          "image": "/images/beefmandi.webp",
+          "portions": {
+            "Qtr": 230,
+            "half": 460,
+            "3/4": 690,
+            "full": 890
+          },
+          "mandiChickenOnly": {
+          "Qtr": 150,
+          "half": 300,
+          "3/4": 450,
+          "full": 600
+        }
+        },
+        {
+          "item": "Mutton Mandi",
+          "image": "/images/muttonmandi.webp",
+          "portions": {
+            "Qtr": 350,
+            "half": 700,
+            "3/4": 1050,
+            "full": 1300
+          },
+          "mandiChickenOnly": {
+          "Qtr": 280,
+          "half": 560,
+          "3/4": 840,
+          "full": 1100
+        }
+        }
           ],
-        "Chicken Broasted": [
+          
+        "Broasted Chicken": [
           {
             "item": "Chicken Broasted",
-            "image": "/images/chickenbroasted.png",
-            "price": 250
-          },
-          {
-            "item": "Spicy Chicken Broasted",
-            "image": "/images/spicybroasted.png",
-            "price": 270
+            "image": "/images/broast.png",
+            "portions": {
+                "Qtr": 130,
+                "half": 260,
+                "3/4": 390,
+                "full": 500
+              }
           }
-        ],
-        "asianCuisine": {
-          "heading":"Asian Cuisine",
-          "categories": [
-            {
-              "name": "Fried Rice",
-              "items": [
-                {
-                  "name": "Veg Fried Rice",
-                  "price": 140
-                },
-                {
-                  "name": "Egg Fried Rice",
-                  "price": 160
-                },
-                {
-                  "name": "Chicken Fried Rice",
-                  "price": 180
-                }
-              ]
-            },
-            {
-              "name": "Noodles",
-              "items": [
-                {
-                  "name": "Veg Noodles",
-                  "price": 140
-                },
-                {
-                  "name": "Egg Noodles",
-                  "price": 160
-                },
-                {
-                  "name": "Chicken Noodles",
-                  "price": 180
-                }
-              ]
-            },
-            {
-              "name": "Chicken Dishes",
-              "items": [
-                {
-                  "name": "Garlic Chicken",
-                  "price": 140
-                },
-                {
-                  "name": "Chicken Kondattam",
-                  "price": 140
-                }
-              ]
-            }
-          ]
-        }
+        ]
+        
       }
     },
     {
@@ -1054,171 +1107,180 @@
       "description": "A supper mandhi",
       "menu": {
        "Special Arabian Mandi": [
-            {
-              "item": "Chicken Mandi",
-              "image": "/images/chickenmandi.png",
-              "portions": {
-                "Qtr": 170,
-                "half": 340,
-                "3/4": 510,
-                "full": 650
-              }
-            },
-            {
-              "item": "Alfham Mandi",
-              "image": "/images/alfammandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Mutton Mandi",
-              "image": "/images/alfammandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Chicken Pollichath Mandi",
-              "image": "/images/pollichathmandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Shawaya Mandi",
-              "image": "/images/shawwaya.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Honey Chilly Mandi",
-              "image": "/images/honeymandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Kanthari Alfham Mandi",
-              "image": "/images/kantharimandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Peri Peri Alfham Mandi",
-              "image": "/images/perperimandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Beef Pollichath Mandi",
-              "image": "/images/perperimandi.png",
-              "portions": {
-                "Qtr": 230,
-                "half": 460,
-                "3/4": 690,
-                "full": 890
-              }
-            },
-            {
-              "item": "Beef Kanthari Mandi",
-              "image": "/images/perperimandi.png",
-              "portions": {
-                "Qtr": 230,
-                "half": 460,
-                "3/4": 690,
-                "full": 890
-              }
-            }
+        {
+          "item": "Chicken Mandi",
+          "image": "/images/chickenmandi.webp",
+          "portions": {
+            "Qtr": 170,
+            "half": 340,
+            "3/4": 510,
+            "full": 650
+          },
+          "mandiChickenOnly": {
+          "Qtr": 100,
+          "half": 200,
+          "3/4": 300,
+          "full": 400
+        }
+        },
+        {
+          "item": "Alfham Mandi",
+          "image": "/images/alfammandi.png",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 120,
+          "half": 240,
+          "3/4": 360,
+          "full": 480
+        }
+        },
+        {
+          "item": "Chicken Pollichath Mandi",
+          "image": "/images/pollichathmandi.webp",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 120,
+          "half": 240,
+          "3/4": 360,
+          "full": 480
+        }
+        },
+        {
+          "item": "Shawaya Mandi",
+          "image": "/images/shawwaya.webp",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 120,
+          "half": 240,
+          "3/4": 360,
+          "full": 480
+        }
+        },
+        {
+          "item": "Kanthari Alfham Mandi",
+          "image": "/images/kantharimandi.webp",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 120,
+          "half": 240,
+          "3/4": 360,
+          "full": 480
+        }
+        },
+        {
+          "item": "Peri Peri Alfham Mandi",
+          "image": "/images/perperimandi.webp",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 130,
+          "half": 260,
+          "3/4": 390,
+          "full": 480
+        }
+        },
+        {
+          "item": "Honey Chicken Mandi",
+          "image": "/images/honeymandi.webp",
+          "portions": {
+            "Qtr": 200,
+            "half": 390,
+            "3/4": 590,
+            "full": 760
+          },
+          "mandiChickenOnly": {
+          "Qtr": 130,
+          "half": 260,
+          "3/4": 390,
+          "full": 480
+        }
+        },
+        {
+          "item": "Beef Pollichath Mandi",
+          "image": "/images/beefmandi.webp",
+          "portions": {
+            "Qtr": 230,
+            "half": 460,
+            "3/4": 690,
+            "full": 890
+          },
+          "mandiChickenOnly": {
+          "Qtr": 150,
+          "half": 300,
+          "3/4": 450,
+          "full": 600
+        }
+        },
+        {
+          "item": "Beef Kanthari Mandi",
+          "image": "/images/beefmandi.webp",
+          "portions": {
+            "Qtr": 230,
+            "half": 460,
+            "3/4": 690,
+            "full": 890
+          },
+          "mandiChickenOnly": {
+          "Qtr": 150,
+          "half": 300,
+          "3/4": 450,
+          "full": 600
+        }
+        },
+        {
+          "item": "Mutton Mandi",
+          "image": "/images/muttonmandi.webp",
+          "portions": {
+            "Qtr": 350,
+            "half": 700,
+            "3/4": 1050,
+            "full": 1300
+          },
+          "mandiChickenOnly": {
+          "Qtr": 280,
+          "half": 560,
+          "3/4": 840,
+          "full": 1100
+        }
+        }
           ],
-        "Chicken Broasted": [
+          
+        "Broasted Chicken": [
           {
             "item": "Chicken Broasted",
-            "image": "/images/chickenbroasted.png",
-            "price": 250
-          },
-          {
-            "item": "Spicy Chicken Broasted",
-            "image": "/images/spicybroasted.png",
-            "price": 270
+            "image": "/images/broast.png",
+            "portions": {
+                "Qtr": 130,
+                "half": 260,
+                "3/4": 390,
+                "full": 500
+              }
           }
-        ],
-        "asianCuisine": {
-          "heading":"Asian Cuisine",
-          "categories": [
-            {
-              "name": "Fried Rice",
-              "items": [
-                {
-                  "name": "Veg Fried Rice",
-                  "price": 140
-                },
-                {
-                  "name": "Egg Fried Rice",
-                  "price": 160
-                },
-                {
-                  "name": "Chicken Fried Rice",
-                  "price": 180
-                }
-              ]
-            },
-            {
-              "name": "Noodles",
-              "items": [
-                {
-                  "name": "Veg Noodles",
-                  "price": 140
-                },
-                {
-                  "name": "Egg Noodles",
-                  "price": 160
-                },
-                {
-                  "name": "Chicken Noodles",
-                  "price": 180
-                }
-              ]
-            },
-            {
-              "name": "Chicken Dishes",
-              "items": [
-                {
-                  "name": "Garlic Chicken",
-                  "price": 140
-                },
-                {
-                  "name": "Chicken Kondattam",
-                  "price": 140
-                }
-              ]
-            }
-          ]
-        }
+        ]
       }
     },
     {
@@ -1227,171 +1289,180 @@
       "description": "A supper mandhi",
       "menu": {
        "Special Arabian Mandi": [
-            {
-              "item": "Chicken Mandi",
-              "image": "/images/chickenmandi.png",
-              "portions": {
-                "Qtr": 170,
-                "half": 340,
-                "3/4": 510,
-                "full": 650
-              }
-            },
-            {
-              "item": "Alfham Mandi",
-              "image": "/images/alfammandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Mutton Mandi",
-              "image": "/images/alfammandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Chicken Pollichath Mandi",
-              "image": "/images/pollichathmandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Shawaya Mandi",
-              "image": "/images/shawwaya.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Honey Chilly Mandi",
-              "image": "/images/honeymandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Kanthari Alfham Mandi",
-              "image": "/images/kantharimandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Peri Peri Alfham Mandi",
-              "image": "/images/perperimandi.png",
-              "portions": {
-                "Qtr": 190,
-                "half": 380,
-                "3/4": 570,
-                "full": 720
-              }
-            },
-            {
-              "item": "Beef Pollichath Mandi",
-              "image": "/images/perperimandi.png",
-              "portions": {
-                "Qtr": 230,
-                "half": 460,
-                "3/4": 690,
-                "full": 890
-              }
-            },
-            {
-              "item": "Beef Kanthari Mandi",
-              "image": "/images/perperimandi.png",
-              "portions": {
-                "Qtr": 230,
-                "half": 460,
-                "3/4": 690,
-                "full": 890
-              }
-            }
+        {
+          "item": "Chicken Mandi",
+          "image": "/images/chickenmandi.webp",
+          "portions": {
+            "Qtr": 170,
+            "half": 340,
+            "3/4": 510,
+            "full": 650
+          },
+          "mandiChickenOnly": {
+          "Qtr": 100,
+          "half": 200,
+          "3/4": 300,
+          "full": 400
+        }
+        },
+        {
+          "item": "Alfham Mandi",
+          "image": "/images/alfammandi.png",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 120,
+          "half": 240,
+          "3/4": 360,
+          "full": 480
+        }
+        },
+        {
+          "item": "Chicken Pollichath Mandi",
+          "image": "/images/pollichathmandi.webp",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 120,
+          "half": 240,
+          "3/4": 360,
+          "full": 480
+        }
+        },
+        {
+          "item": "Shawaya Mandi",
+          "image": "/images/shawwaya.webp",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 120,
+          "half": 240,
+          "3/4": 360,
+          "full": 480
+        }
+        },
+        {
+          "item": "Kanthari Alfham Mandi",
+          "image": "/images/kantharimandi.webp",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 120,
+          "half": 240,
+          "3/4": 360,
+          "full": 480
+        }
+        },
+        {
+          "item": "Peri Peri Alfham Mandi",
+          "image": "/images/perperimandi.webp",
+          "portions": {
+            "Qtr": 190,
+            "half": 380,
+            "3/4": 570,
+            "full": 720
+          },
+          "mandiChickenOnly": {
+          "Qtr": 130,
+          "half": 260,
+          "3/4": 390,
+          "full": 480
+        }
+        },
+        {
+          "item": "Honey Chicken Mandi",
+          "image": "/images/honeymandi.webp",
+          "portions": {
+            "Qtr": 200,
+            "half": 390,
+            "3/4": 590,
+            "full": 760
+          },
+          "mandiChickenOnly": {
+          "Qtr": 130,
+          "half": 260,
+          "3/4": 390,
+          "full": 480
+        }
+        },
+        {
+          "item": "Beef Pollichath Mandi",
+          "image": "/images/beefmandi.webp",
+          "portions": {
+            "Qtr": 230,
+            "half": 460,
+            "3/4": 690,
+            "full": 890
+          },
+          "mandiChickenOnly": {
+          "Qtr": 150,
+          "half": 300,
+          "3/4": 450,
+          "full": 600
+        }
+        },
+        {
+          "item": "Beef Kanthari Mandi",
+          "image": "/images/beefmandi.webp",
+          "portions": {
+            "Qtr": 230,
+            "half": 460,
+            "3/4": 690,
+            "full": 890
+          },
+          "mandiChickenOnly": {
+          "Qtr": 150,
+          "half": 300,
+          "3/4": 450,
+          "full": 600
+        }
+        },
+        {
+          "item": "Mutton Mandi",
+          "image": "/images/muttonmandi.webp",
+          "portions": {
+            "Qtr": 350,
+            "half": 700,
+            "3/4": 1050,
+            "full": 1300
+          },
+          "mandiChickenOnly": {
+          "Qtr": 280,
+          "half": 560,
+          "3/4": 840,
+          "full": 1100
+        }
+        }
           ],
-        "Chicken Broasted": [
+          
+        "Broasted Chicken": [
           {
             "item": "Chicken Broasted",
-            "image": "/images/chickenbroasted.png",
-            "price": 250
-          },
-          {
-            "item": "Spicy Chicken Broasted",
-            "image": "/images/spicybroasted.png",
-            "price": 270
+            "image": "/images/broast.png",
+            "portions": {
+                "Qtr": 130,
+                "half": 260,
+                "3/4": 390,
+                "full": 500
+              }
           }
-        ],
-        "asianCuisine": {
-          "heading":"Asian Cuisine",
-          "categories": [
-            {
-              "name": "Fried Rice",
-              "items": [
-                {
-                  "name": "Veg Fried Rice",
-                  "price": 140
-                },
-                {
-                  "name": "Egg Fried Rice",
-                  "price": 160
-                },
-                {
-                  "name": "Chicken Fried Rice",
-                  "price": 180
-                }
-              ]
-            },
-            {
-              "name": "Noodles",
-              "items": [
-                {
-                  "name": "Veg Noodles",
-                  "price": 140
-                },
-                {
-                  "name": "Egg Noodles",
-                  "price": 160
-                },
-                {
-                  "name": "Chicken Noodles",
-                  "price": 180
-                }
-              ]
-            },
-            {
-              "name": "Chicken Dishes",
-              "items": [
-                {
-                  "name": "Garlic Chicken",
-                  "price": 140
-                },
-                {
-                  "name": "Chicken Kondattam",
-                  "price": 140
-                }
-              ]
-            }
-          ]
-        }
+        ]
       }
     }
   ]
