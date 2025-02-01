@@ -3,7 +3,7 @@ name: Deploy to Hostinger
 on:
   push:
     branches:
-      - home  # Change this if your main branch has a different name
+      - home  # Use your working branch name
 
 jobs:
   deploy:
@@ -24,8 +24,8 @@ jobs:
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4
         with:
-          server: ftp.yourdomain.com  # Replace with your Hostinger FTP server
-          username: your-ftp-username # Replace with your Hostinger FTP username
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: dist/  # Make sure this matches your build output folder
-          server-dir: /public_html/  # Change if your website is in a subfolder
+          server: ftp.rabeehraidan.com  # Your Hostinger FTP server
+          username: ${{ secrets.FTP_USERNAME }}  # Securely fetch from GitHub Secrets
+          password: ${{ secrets.FTP_PASSWORD }}  # Securely fetch from GitHub Secrets
+          local-dir: dist/  # Your build output folder
+          server-dir: /public_html/  # Change if needed
