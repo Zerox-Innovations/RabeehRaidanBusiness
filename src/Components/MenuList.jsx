@@ -35,11 +35,6 @@ const MenuList = ({ menu }) => {
       {menu.asianCuisine && <AsianCuisineSection asianCuisine={menu.asianCuisine} />}
 
       <div className="py-10">  {/* Adds space above and below */}
-        {/* Text above the scrolling text */}
-        <p className="text-center text-softOrange font-semibold text-lg mb-4">
-          Minimum food preparation time will be 20 min.<br />
-          All Menu prices are exclusive of 5% GST
-        </p>
 
         {/* Scrolling Text Component */}
         <ScrollingText />
