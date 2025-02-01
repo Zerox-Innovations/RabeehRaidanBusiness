@@ -1,32 +1,58 @@
 import React, { useState } from "react";
+import ScrollingText from "../Pages/utils/ScrollingText";
+import { MdLogin } from "react-icons/md";
+
 
 const MenuList = ({ menu }) => {
   return (
     <div className="w-full">
-      <div className="justify-center flex items-center">
-        <img src="/images/RRmenu.png" className="h-72" alt="" />
+
+      <div className="flex flex-row justify-end">
+        <button
+          onClick={() => window.open("https://rabeehraidan.com/", "_blank")}
+          className="bg-blue-500 text-white py-2 px-6 rounded-lg mt-4 mr-2 hover:bg-blue-600 transition-all"
+        >
+          <MdLogin className="inline mr-2" /> Visit our Website
+        </button>
       </div>
 
-      {Object.keys(menu).map((category) => (
-        <div key={category} className="mb-10">
-          {category === "asianCuisine" ? (
-            <AsianCuisineSection asianCuisine={menu[category]} />
-          ) : (
+      <div className="justify-center flex items-center">
+        <img src="/images/RRmenu.png" className="w-72 p-5  h-auto" alt="Menu" />
+      </div>
+
+      {/* ✅ Exclude "asianCuisine" from this loop */}
+      {Object.keys(menu).map((category) =>
+        category !== "asianCuisine" && (
+          <div key={category} className="mb-10">
             <CategorySection
               categoryName={category}
               items={menu[category]}
-              showImage={category.toLowerCase() === "mandi"} // Show image only for "Mandi"
+              showImage={category.toLowerCase() === "mandi"}
             />
-          )}
-        </div>
-      ))}
+          </div>
+        )
+      )}
+      {menu.asianCuisine && <AsianCuisineSection asianCuisine={menu.asianCuisine} />}
+
+      <div className="py-10">  {/* Adds space above and below */}
+
+        {/* Scrolling Text Component */}
+        <ScrollingText />
+
+        {/* Text below the scrolling text */}
+        <p className="text-center text-gray-600 text-sm mt-6">
+          © 2025 Rabeeh Raidan. All Rights Reserved.
+        </p>
+      </div>
+
+
     </div>
   );
 };
 
 const AsianCuisineSection = ({ asianCuisine }) => {
   const [dropdownStates, setDropdownStates] = useState(
-    asianCuisine.categories.map(() => false) // Initialize dropdown states for categories
+    asianCuisine.categories.map(() => false)
   );
 
   const toggleDropdown = (index) => {
@@ -40,7 +66,6 @@ const AsianCuisineSection = ({ asianCuisine }) => {
       <h2 className="text-4xl mb-5 text-black text-center font-bold" style={{ fontFamily: 'Great Vibes, cursive' }}>
         {asianCuisine.heading}
       </h2>
-      {/* <p className="text-xl text-gray-600 text-center mb-6">{asianCuisine.description}</p>   */}
 
       {asianCuisine.categories.map((subcategory, index) => (
         <div
@@ -49,23 +74,17 @@ const AsianCuisineSection = ({ asianCuisine }) => {
           onClick={() => toggleDropdown(index)}
         >
           <div className="flex items-center justify-between">
-            {/* Subcategory Name */}
             <h4 className="text-xl font-semibold text-gray-800 lg:text-2xl">
               {subcategory.name.toUpperCase()}
             </h4>
-            {/* Plus/Minus Button */}
-            <span
-              className="text-2xl font-bold text-gray-700 bg-white w-8 h-8 flex items-center justify-center rounded-full"
-            >
+            <span className="text-2xl font-bold text-gray-700 w-8 h-8 flex items-center justify-center rounded-full">
               {dropdownStates[index] ? "-" : "+"}
             </span>
           </div>
 
-          {/* Dropdown Content */}
           {dropdownStates[index] && (
             <div className="mt-4">
-              {/* Items List */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 gap-4">
                 {subcategory.items.map((item, i) => (
                   <div
                     key={i}
@@ -80,6 +99,8 @@ const AsianCuisineSection = ({ asianCuisine }) => {
           )}
         </div>
       ))}
+
+
     </div>
   );
 };
@@ -97,10 +118,13 @@ const CategorySection = ({ categoryName, items, showImage }) => {
 
   return (
     <div>
-      <h2 className="text-4xl mb-5 text-black text-center font-bold" style={{ fontFamily: 'Great Vibes, cursive' }}>
-        {categoryName}
-      </h2>
-      <div className="flex flex-col ">
+      {categoryName.toLowerCase() !== "special arabian mandi" && (
+        <h2 className="text-4xl mb-5 text-black text-center font-bold" style={{ fontFamily: 'Great Vibes, cursive' }}>
+          {categoryName}
+        </h2>
+      )}
+
+      <div className="flex flex-col">
         {Array.isArray(items) &&
           items.map((item, index) => (
             <div
@@ -112,15 +136,14 @@ const CategorySection = ({ categoryName, items, showImage }) => {
                 <h4 className="text-xl font-semibold text-gray-800 lg:text-2xl">
                   {item.item.toUpperCase()}
                 </h4>
-                <span
-                  className="text-2xl font-bold w-10 h-10 flex items-center justify-center rounded-full"
-                >
+
+                <span className="text-2xl font-bold w-10 h-10 flex items-center justify-center rounded-full">
                   {dropdownStates[index] ? "-" : "+"}
                 </span>
               </div>
 
               {dropdownStates[index] && (
-                <div className="">
+                <div className="mt-4">
                   {item.image && (
                     <div className="flex justify-center items-center mb-4">
                       <img
@@ -131,30 +154,55 @@ const CategorySection = ({ categoryName, items, showImage }) => {
                     </div>
                   )}
 
+                  {/* Main Portion List - Single Column Layout */}
                   {item.portions ? (
-                    <ul className="grid grid-cols-2 gap-4">
+                    <div className="flex flex-col space-y-3">
                       {Object.entries(item.portions).map(([portion, price]) => (
-                        <li
+                        <div
                           key={portion}
-                          className="text-gray-800 text-center bg-gray-100 p-2 rounded shadow"
+                          className="text-gray-800 flex justify-around items-center bg-gray-100 p-2 rounded shadow w-full"
                         >
-                          <span className="block font-bold">
-                            {portion.toUpperCase()}
-                          </span>
-                          <span className="block">Rs. {price}</span>
-                        </li>
+                          <span className="font-bold">{portion.toUpperCase()}</span>
+
+                          {/* NV Badge Here */}
+                          {/* <div className="w-10 h-10 flex items-center justify-center rounded-full bg-red-500 text-white font-bold">
+                            NV
+                          </div> */}
+
+                          <span className="text-lg">Rs. {price}</span>
+                        </div>
                       ))}
-                    </ul>
+
+                    </div>
                   ) : (
                     <p className="text-gray-800 text-center text-lg">
                       Price: Rs. {item.price}
                     </p>
+                  )}
+
+                  {/* Mandi Chicken Only Section */}
+                  {item.mandiChickenOnly && (
+                    <div className="mt-6">
+                      <h3 className="text-xl font-semibold text-center text-gray-800 underline">
+                        Mandi Chicken Only
+                      </h3>
+
+                      <div className="flex flex-wrap justify-center gap-4 mt-3">
+                        {Object.entries(item.mandiChickenOnly).map(([portion, price]) => (
+                          <div key={portion} className="text-gray-800 bg-gray-200 p-3 rounded-lg shadow-md text-center">
+                            <span className="block font-bold">{portion.toUpperCase()}</span>
+                            <span className="block text-lg">Rs. {price}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
                   )}
                 </div>
               )}
             </div>
           ))}
       </div>
+
     </div>
   );
 };

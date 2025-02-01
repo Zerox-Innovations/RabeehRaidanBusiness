@@ -14,8 +14,8 @@ const Navbar = () => {
   return (
     <div>
       {/* Navbar Container */}
-      <nav className={`absolute top-0 left-0 w-full flex justify-center items-center py-16 px-4 mt-12 ${getNavbarBgColor()} transition-all duration-300 z-40`}>
-        <div className="flex md:flex-col justify-between items-center w-full max-w-5xl space-y-4 md:space-y-0">
+      <nav className={`absolute left-0 w-full flex justify-center items-center py-16 px-4 ${getNavbarBgColor()} transition-all duration-300 z-40`}>
+        <div className="flex md:flex-col justify-between items-center w-full max-w-5xl space-y-4 md:space-y-0 mt-12">
           {/* Logo */}
           <a href="/" className="flex-shrink-0 md:mb-8 ">
             <img

@@ -1,10 +1,16 @@
 import React from "react";
 import { IoLogoInstagram } from "react-icons/io5";
+import ScrollingText from "./utils/ScrollingText";
 
 const ContactUs = () => {
   return (
     <>
-      <div className="flex justify-center items-center  mb-5 ">
+      {location.pathname !== "/" && (
+        <div className="relative top-0 left-0 w-full z-40 bg-gray-900 text-white">
+          <ScrollingText />
+        </div>
+      )}
+      <div className="flex justify-center items-center  mb-5 mt-64 p-6">
         <div className="flex flex-col md:flex-row w-full gap-0 max-w-7xl">
           {/* Left: Contact Form (Amber background) */}
           <div className="flex-1 bg-softOrange p-8">
