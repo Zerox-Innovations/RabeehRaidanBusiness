@@ -183,8 +183,8 @@ const CategorySection = ({ categoryName, items, showImage }) => {
                   {/* Mandi Chicken Only Section */}
                   {item.mandiChickenOnly && (
                     <div className="mt-6">
-                      <h3 className="text-xl font-semibold text-center text-gray-800 underline">
-                        Mandi Chicken Only
+                      <h3 className="text-xl font-semibold text-center text-gray-800 ">
+                        {item.item.replace(/Mandi$/, "").trim()} Only
                       </h3>
 
                       <div className="flex flex-wrap justify-center gap-4 mt-3">

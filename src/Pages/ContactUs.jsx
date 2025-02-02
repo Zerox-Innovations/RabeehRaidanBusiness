@@ -10,7 +10,7 @@ const ContactUs = () => {
           <ScrollingText />
         </div>
       )}
-      <div className="flex justify-center items-center  mb-5 mt-64 p-6">
+      <div className="flex justify-center items-center  mb-5">
         <div className="flex flex-col md:flex-row w-full gap-0 max-w-7xl">
           {/* Left: Contact Form (Amber background) */}
           <div className="flex-1 bg-softOrange p-8">
