@@ -7,7 +7,7 @@ const WhoWeAre = () => {
       <div className="relative top-0 left-0 w-full z-40 bg-gray-900 text-white mb-5">
         <ScrollingText />
       </div>
-      <div className="max-w-7xl mx-auto mt-52 md:mt-36 px-8">
+      <div className="max-w-7xl mx-auto mt-52 md:mt-36 px-8 mb-5">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center min-h-screen">
           {/* Left Column - Text */}
           <div>
