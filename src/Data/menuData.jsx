@@ -114,10 +114,10 @@ const menuData = {
             "item": "Chicken Broasted",
             "image": broast,
             "portions": {
-              "Qtr": 130,
-              "half": 260,
-              "3/4": 390,
-              "full": 500
+              "QUARTER": 130, 
+              "HALF": 260,
+              "THREE QUATER": 390,
+              "FULL": 500
             }
           }
         ],
@@ -176,7 +176,30 @@ const menuData = {
               ]
             }
           ]
-        }
+        },
+        Drinks: {
+          heading: "Drinks",
+          categories: [
+            {
+              name: "Hot Drinks",
+              items: [
+                { name: "Tea", price: 20 },
+                { name: "Black Tea", price: 15 },
+                { name: "Coffee", price: 30 },
+                { name: "Ginger Tea", price: 25 },
+              ],
+            },
+            {
+              name: "Cold Drinks",
+              items: [
+                { name: "Lime Juice", price: 40 },
+                { name: "Mint Lemonade", price: 50 },
+                { name: "Falooda", price: 100 },
+                { name: "Cold Coffee", price: 80 },
+              ],
+            }
+          ],
+        },
       }
     },
   ]

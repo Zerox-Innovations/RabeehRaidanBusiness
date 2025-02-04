@@ -1,37 +1,47 @@
 import React, { useState } from "react";
 import { MdLogin } from "react-icons/md";
+import ScrollingText from '../Pages/utils/ScrollingText.jsx'
 
 const MenuList = ({ menu }) => {
   return (
-    <div className="w-full">
-      {/* Visit Website Button */}
-      <div className="flex flex-row justify-end">
-        <button
-          onClick={() => window.open("https://rabeehraidan.com/", "_blank")}
-          className="bg-blue-500 text-white py-2 px-6 rounded-lg mt-4 mr-2 hover:bg-blue-600 transition-all"
-        >
-          <MdLogin className="inline mr-2" /> Visit our Website
-        </button>
-      </div>
-
-      {/* Menu Image */}
-      <div className="justify-center flex items-center">
-        <img src="/images/RRmenu.png" className="w-72 p-5 h-auto" alt="Menu" />
-      </div>
-
-      {/* Render Each Category */}
-      {Object.keys(menu).map((category) => (
-        <div key={category} className="mb-10">
-          {category === "asianCuisine" ? (
-            <AsianCuisineSection data={menu[category]} />
-          ) : (
-            <CategorySection categoryName={category} items={menu[category]} />
-          )}
+    <>
+      <div className="w-full">
+        {/* Visit Website Button */}
+        <div className="flex flex-row justify-end">
+          <button
+            onClick={() => window.open("https://rabeehraidan.com/", "_blank")}
+            className="bg-blue-500 text-white py-2 px-6 rounded-lg mt-4 mr-2 hover:bg-blue-600 transition-all"
+          >
+            <MdLogin className="inline mr-2" /> Visit our Website
+          </button>
         </div>
-      ))}
-    </div>
+
+        {/* Menu Image */}
+        <div className="justify-center flex items-center">
+          <img src="/images/RRmenu.png" className="w-72 p-5 h-auto" alt="Menu" />
+        </div>
+
+        {/* Render Each Category */}
+        {Object.keys(menu).map((category) => (
+          <div key={category} className="mb-10">
+            {category === "asianCuisine" || category === "Drinks" ? (
+              <AsianCuisineSection data={menu[category]} />
+            ) : (
+              <CategorySection categoryName={category} items={menu[category]} />
+            )}
+          </div>  
+        ))}
+      </div>
+      <div className="py-5">
+          <ScrollingText/>
+          <div className="mb-4 flex justify-center mt-4">
+             <p className="text-softOrange">© Rabeeh Raidan 2025. All Rights Reserved.</p>
+          </div>
+      </div>
+    </>
   );
 };
+
 
 const CategorySection = ({ categoryName, items }) => {
   const [dropdownStates, setDropdownStates] = useState(items.map(() => false));
@@ -62,10 +72,8 @@ const CategorySection = ({ categoryName, items }) => {
               // style={{ backgroundColor: bgColor }}
               onClick={() => toggleDropdown(index)}
             >
-              <div
-                className={`flex transition-all duration-300 ${dropdownStates[index] ? "flex-col items-center" : "justify-around items-center"
-                  }`}
-              >
+              <div className="flex flex-col justify-around items-center">
+
                 <div>
                   {item.image && (
                     <div className="flex justify-center items-center mb-4">
@@ -73,6 +81,7 @@ const CategorySection = ({ categoryName, items }) => {
                         src={item.image}
                         className="h-36 object-cover rounded-lg"
                         alt={item.item}
+                        loading="lazy"
                       />
                     </div>
                   )}
@@ -87,7 +96,7 @@ const CategorySection = ({ categoryName, items }) => {
                   {/* Handle different price structures */}
                   {item.price ? (
                     <div className="flex flex-col justify-around text-center p-4 transition-all duration-300">
-                      <div className="flex justify-around items-center mb-2">
+                      <div className="flex justify-between md:justify-around items-center mb-2">
                         <p className="text-white text-2xl uppercase" style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}>
                           {item.item}
                         </p>
@@ -97,8 +106,8 @@ const CategorySection = ({ categoryName, items }) => {
                       </div>
 
                       {item.price.mandiChickenOnly && (
-                        <div className="flex justify-around items-center mt-2">
-                          <p className="text-white text-2xl uppercase" style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}>
+                        <div className="flex justify-between md:justify-around items-center mt-2">
+                          <p className="text-white text-2xl  uppercase" style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}>
                             {item.item.replace(/Mandi$/, "").trim()} Only{" "}
                           </p>
                           <p className="text-white text-2xl " style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}>
@@ -110,8 +119,8 @@ const CategorySection = ({ categoryName, items }) => {
                   ) : item.portions ? (
                     <div className="flex flex-col w-full px-4 gap-3">
                       {Object.keys(item.portions).map((size) => (
-                        <div key={size} className="flex justify-around w-full">
-                          <p style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }} className="text-white text-xl">{size}</p>
+                        <div key={size} className="flex justify-between w-full">
+                          <p style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }} className="text-white text-xl">{size.toUpperCase()}</p>
                           <p style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }} className="text-white text-xl font-semibold">₹ {item.portions[size]}</p>
                         </div>
                       ))}
@@ -143,9 +152,9 @@ const AsianCuisineSection = ({ data }) => {
   };
 
   return (
-    <div className="py-8">
+    <div className="py-4">
       {/* Heading for Asian Cuisine */}
-      <h2 className="text-4xl mb-8 text-black text-center font-bold" style={{ fontFamily: 'Oleo Script' }}>
+      <h2 className="text-4xl mb-4 text-black text-center font-bold" style={{ fontFamily: 'Oleo Script' }}>
         {data.heading}
       </h2>
 
@@ -166,7 +175,7 @@ const AsianCuisineSection = ({ data }) => {
 
               {/* Show +/- only when dropdown is closed */}
               {!dropdownStates[categoryIndex] && (
-                <span className="text-2xl font-bold text-gray-700 w-8 h-8 flex items-center justify-center rounded-full">
+                <span className="text-2xl font-bold text-white w-8 h-8 flex items-center justify-center rounded-full">
                   {dropdownStates[categoryIndex] ? "-" : "+"}
                 </span>
               )}
@@ -195,9 +204,13 @@ const AsianCuisineSection = ({ data }) => {
                     )}
 
                     {/* Item Name and Price (JUSTIFIED) */}
-                    <div className="flex justify-around text-center w-full px-4">
-                      <h4 className="text-2xl text-white" style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}>{item.name}</h4>
-                      <p className="text-white text-2xl" style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}>₹ {item.price}</p>
+                    <div className="flex justify-between md:justify-around text-center w-full px-4">
+                      <h4 className="text-2xl text-white uppercase" style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}>
+                        {item.name}
+                      </h4>
+                      <p className="text-white text-2xl uppercase" style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}>
+                        ₹ {item.price}
+                      </p>
                     </div>
                   </div>
                 ))}
