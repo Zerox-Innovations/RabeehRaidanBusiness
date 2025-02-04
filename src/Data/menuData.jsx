@@ -15,7 +15,7 @@ const menuData = {
 
   "restaurants": [
     {
-      "id": 1,
+      "id": 2,
       "name": "Valanchery",
       "menu": {
         "Special Arabian Mandi": [

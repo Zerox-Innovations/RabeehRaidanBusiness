@@ -68,24 +68,24 @@ const CategorySection = ({ categoryName, items }) => {
           return (
             <div
               key={index}
-              className="p-5 rounded-lg shadow-lg border-2 border-white bg-yellow-300 cursor-pointer hover:bg-yellow-400 hover:bg-opacity-80 transition"
+              className="p-5 rounded-lg shadow-lg border-2 border-white bg-yellow-300 cursor-pointer hover:bg-yellow-400"
               // style={{ backgroundColor: bgColor }}
               onClick={() => toggleDropdown(index)}
             >
               <div className="flex flex-col justify-around items-center">
-
-                <div>
+                {/* <div> */}
                   {item.image && (
-                    <div className="flex justify-center items-center mb-4">
+                    // <div className="flex justify-center items-center mb-4">
                       <img
                         src={item.image}
                         className="h-36 object-cover rounded-lg"
                         alt={item.item}
-                        loading="lazy"
+                        // onLoad={}
+                        // loading="lazy"
                       />
-                    </div>
+                    // </div>
                   )}
-                </div>
+                {/* </div> */}
                 <h4 className="text-2xl font-semibold text-white lg:text-2xl" style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }} >
                   {item.item}
                 </h4>
