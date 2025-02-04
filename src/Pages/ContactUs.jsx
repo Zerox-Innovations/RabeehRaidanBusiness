@@ -10,7 +10,10 @@ const ContactUs = () => {
           <ScrollingText />
         </div>
       )}
-      <div className="flex justify-center items-center  mb-5">
+      <div
+        className={`flex justify-center items-center mb-5 ${location.pathname !== "/" ? "mt-64 p-6" : ""
+          }`}
+      >
         <div className="flex flex-col md:flex-row w-full gap-0 max-w-7xl">
           {/* Left: Contact Form (Amber background) */}
           <div className="flex-1 bg-softOrange p-8">
@@ -66,18 +69,18 @@ const ContactUs = () => {
 
           {/* Right: Instagram Section (Lime background) */}
 
-            <div className="w-full sm:w-3/4 md:w-2/5 bg-yellow-400 flex flex-col justify-center items-center text-center p-8 space-y-4 cursor-pointer"
-              onClick={() => window.open("https://www.instagram.com/rabeehraidanofficial/", "_blank")}
-            >
-              <div className="font-sans">
-                <p className="font-bold text-white text-4xl md:text-5xl">
-                  FOLLOW US <br /> ON INSTAGRAM
-                </p>
-                <span className="text-6xl md:text-7xl text-white flex justify-center items-center mt-5">
-                  <IoLogoInstagram />
-                </span>
-              </div>
+          <div className="w-full sm:w-3/4 md:w-2/5 bg-yellow-400 flex flex-col justify-center items-center text-center p-8 space-y-4 cursor-pointer"
+            onClick={() => window.open("https://www.instagram.com/rabeehraidanofficial/", "_blank")}
+          >
+            <div className="font-sans">
+              <p className="font-bold text-white text-4xl md:text-5xl">
+                FOLLOW US <br /> ON INSTAGRAM
+              </p>
+              <span className="text-6xl md:text-7xl text-white flex justify-center items-center mt-5">
+                <IoLogoInstagram />
+              </span>
             </div>
+          </div>
         </div>
       </div>
     </>

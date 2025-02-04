@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-import ScrollingText from "../Pages/utils/ScrollingText";
 import { MdLogin } from "react-icons/md";
-
 
 const MenuList = ({ menu }) => {
   return (
     <div className="w-full">
-
+      {/* Visit Website Button */}
       <div className="flex flex-row justify-end">
         <button
           onClick={() => window.open("https://rabeehraidan.com/", "_blank")}
@@ -16,43 +14,126 @@ const MenuList = ({ menu }) => {
         </button>
       </div>
 
+      {/* Menu Image */}
       <div className="justify-center flex items-center">
-        <img src="/images/RRmenu.png" className="w-72 p-5  h-auto" alt="Menu" />
+        <img src="/images/RRmenu.png" className="w-72 p-5 h-auto" alt="Menu" />
       </div>
 
-      {/* ✅ Exclude "asianCuisine" from this loop */}
-      {Object.keys(menu).map((category) =>
-        category !== "asianCuisine" && (
-          <div key={category} className="mb-10">
-            <CategorySection
-              categoryName={category}
-              items={menu[category]}
-              showImage={category.toLowerCase() === "mandi"}
-            />
-          </div>
-        )
-      )}
-      {menu.asianCuisine && <AsianCuisineSection asianCuisine={menu.asianCuisine} />}
-
-      <div className="py-10">  {/* Adds space above and below */}
-
-        {/* Scrolling Text Component */}
-        <ScrollingText />
-
-        {/* Text below the scrolling text */}
-        <p className="text-center text-gray-600 text-sm mt-6">
-          © 2025 Rabeeh Raidan. All Rights Reserved.
-        </p>
-      </div>
-
-
+      {/* Render Each Category */}
+      {Object.keys(menu).map((category) => (
+        <div key={category} className="mb-10">
+          {category === "asianCuisine" ? (
+            <AsianCuisineSection data={menu[category]} />
+          ) : (
+            <CategorySection categoryName={category} items={menu[category]} />
+          )}
+        </div>
+      ))}
     </div>
   );
 };
 
-const AsianCuisineSection = ({ asianCuisine }) => {
+const CategorySection = ({ categoryName, items }) => {
+  const [dropdownStates, setDropdownStates] = useState(items.map(() => false));
+
+  const toggleDropdown = (index) => {
+    setDropdownStates((prevState) =>
+      prevState.map((state, i) => (i === index ? !state : state))
+    );
+  };
+
+  // Define the background colors
+
+
+  return (
+    <div>
+      <h2 className="text-3xl mb-5 text-black text-center" style={{ fontFamily: 'Oleo Script' }}>
+        {categoryName}
+      </h2>
+      <div className="flex flex-col">
+        {items.map((item, index) => {
+          // Determine the background color based on the index
+          // const bgColor = bgColors[index % bgColors.length];
+
+          return (
+            <div
+              key={index}
+              className="p-5 rounded-lg shadow-lg border-2 border-white bg-yellow-300 cursor-pointer hover:bg-yellow-400 hover:bg-opacity-80 transition"
+              // style={{ backgroundColor: bgColor }}
+              onClick={() => toggleDropdown(index)}
+            >
+              <div
+                className={`flex transition-all duration-300 ${dropdownStates[index] ? "flex-col items-center" : "justify-around items-center"
+                  }`}
+              >
+                <div>
+                  {item.image && (
+                    <div className="flex justify-center items-center mb-4">
+                      <img
+                        src={item.image}
+                        className="h-36 object-cover rounded-lg"
+                        alt={item.item}
+                      />
+                    </div>
+                  )}
+                </div>
+                <h4 className="text-2xl font-semibold text-white lg:text-2xl" style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }} >
+                  {item.item}
+                </h4>
+              </div>
+
+              {dropdownStates[index] && (
+                <div className="mt-4">
+                  {/* Handle different price structures */}
+                  {item.price ? (
+                    <div className="flex flex-col justify-around text-center p-4 transition-all duration-300">
+                      <div className="flex justify-around items-center mb-2">
+                        <p className="text-white text-2xl uppercase" style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}>
+                          {item.item}
+                        </p>
+                        <p className="text-white text-2xl " style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}>
+                          ₹{item.price.mandi}
+                        </p>
+                      </div>
+
+                      {item.price.mandiChickenOnly && (
+                        <div className="flex justify-around items-center mt-2">
+                          <p className="text-white text-2xl uppercase" style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}>
+                            {item.item.replace(/Mandi$/, "").trim()} Only{" "}
+                          </p>
+                          <p className="text-white text-2xl " style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}>
+                            ₹{item.price.mandiChickenOnly}
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  ) : item.portions ? (
+                    <div className="flex flex-col w-full px-4 gap-3">
+                      {Object.keys(item.portions).map((size) => (
+                        <div key={size} className="flex justify-around w-full">
+                          <p style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }} className="text-white text-xl">{size}</p>
+                          <p style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }} className="text-white text-xl font-semibold">₹ {item.portions[size]}</p>
+                        </div>
+                      ))}
+                    </div>
+
+                  ) : (
+                    <p className="text-gray-800 text-center text-lg">Price Not Available</p>
+                  )}
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+
+const AsianCuisineSection = ({ data }) => {
   const [dropdownStates, setDropdownStates] = useState(
-    asianCuisine.categories.map(() => false)
+    data.categories.map(() => false)
   );
 
   const toggleDropdown = (index) => {
@@ -62,36 +143,62 @@ const AsianCuisineSection = ({ asianCuisine }) => {
   };
 
   return (
-    <div>
-      <h2 className="text-4xl mb-5 text-black text-center font-bold" style={{ fontFamily: 'Great Vibes, cursive' }}>
-        {asianCuisine.heading}
+    <div className="py-8">
+      {/* Heading for Asian Cuisine */}
+      <h2 className="text-4xl mb-8 text-black text-center font-bold" style={{ fontFamily: 'Oleo Script' }}>
+        {data.heading}
       </h2>
 
-      {asianCuisine.categories.map((subcategory, index) => (
-        <div
-          key={subcategory.name}
-          className="p-5 rounded-lg shadow-lg border-2 border-white bg-yellow-300 cursor-pointer hover:bg-yellow-400 transition"
-          onClick={() => toggleDropdown(index)}
-        >
-          <div className="flex items-center justify-between">
-            <h4 className="text-xl font-semibold text-gray-800 lg:text-2xl">
-              {subcategory.name.toUpperCase()}
-            </h4>
-            <span className="text-2xl font-bold text-gray-700 w-8 h-8 flex items-center justify-center rounded-full">
-              {dropdownStates[index] ? "-" : "+"}
-            </span>
+      {/* Loop through each category */}
+      {data.categories.map((category, categoryIndex) => (
+        <div key={categoryIndex}>
+          {/* Category Header (e.g., Fried Rice, Noodles, etc.) */}
+          <div
+            className="p-5 rounded-lg shadow-lg border-2 border-white bg-yellow-300 cursor-pointer hover:bg-yellow-400 transition-all"
+            onClick={() => toggleDropdown(categoryIndex)}
+          >
+            <div
+              className={`flex items-center ${dropdownStates[categoryIndex] ? "justify-center" : "justify-between"}`}
+            >
+              <h4 className="text-2xl font-semibold text-white lg:text-2xl" style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}>
+                {category.name}
+              </h4>
+
+              {/* Show +/- only when dropdown is closed */}
+              {!dropdownStates[categoryIndex] && (
+                <span className="text-2xl font-bold text-gray-700 w-8 h-8 flex items-center justify-center rounded-full">
+                  {dropdownStates[categoryIndex] ? "-" : "+"}
+                </span>
+              )}
+            </div>
           </div>
 
-          {dropdownStates[index] && (
-            <div className="mt-4">
-              <div className="grid grid-cols-1 gap-4">
-                {subcategory.items.map((item, i) => (
+          {/* Dropdown Content */}
+          {dropdownStates[categoryIndex] && (
+            <div>
+              {/* Items List */}
+              <div className="flex flex-col gap-4 bg-yellow-300 p-3">
+                {category.items.map((item, itemIndex) => (
                   <div
-                    key={i}
-                    className="p-4 border rounded-lg shadow bg-gray-100 flex flex-col items-center"
+                    key={itemIndex}
+                    className="p-4 flex flex-col justify-around items-center"
                   >
-                    <h4 className="text-lg font-semibold text-gray-800">{item.name}</h4>
-                    <p className="text-gray-600">Price: Rs. {item.price}</p>
+                    {/* Item Image (if available) */}
+                    {item.image && (
+                      <div className="mb-4">
+                        <img
+                          src={item.image}
+                          alt={item.name}
+                          className="w-32 h-32 object-cover rounded-lg"
+                        />
+                      </div>
+                    )}
+
+                    {/* Item Name and Price (JUSTIFIED) */}
+                    <div className="flex justify-around text-center w-full px-4">
+                      <h4 className="text-2xl text-white" style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}>{item.name}</h4>
+                      <p className="text-white text-2xl" style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}>₹ {item.price}</p>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -99,112 +206,9 @@ const AsianCuisineSection = ({ asianCuisine }) => {
           )}
         </div>
       ))}
-
-
     </div>
   );
 };
 
-const CategorySection = ({ categoryName, items, showImage }) => {
-  const [dropdownStates, setDropdownStates] = useState(
-    Array.isArray(items) ? items.map(() => false) : []
-  );
-
-  const toggleDropdown = (index) => {
-    setDropdownStates((prevState) =>
-      prevState.map((state, i) => (i === index ? !state : state))
-    );
-  };
-
-  return (
-    <div>
-      {categoryName.toLowerCase() !== "special arabian mandi" && (
-        <h2 className="text-4xl mb-5 text-black text-center font-bold" style={{ fontFamily: 'Great Vibes, cursive' }}>
-          {categoryName}
-        </h2>
-      )}
-
-      <div className="flex flex-col">
-        {Array.isArray(items) &&
-          items.map((item, index) => (
-            <div
-              key={index}
-              className="p-5 rounded-lg shadow-lg border-2 border-white bg-yellow-300 cursor-pointer hover:bg-yellow-400 transition"
-              onClick={() => toggleDropdown(index)}
-            >
-              <div className="flex items-center justify-between">
-                <h4 className="text-xl font-semibold text-gray-800 lg:text-2xl">
-                  {item.item.toUpperCase()}
-                </h4>
-
-                <span className="text-2xl font-bold w-10 h-10 flex items-center justify-center rounded-full">
-                  {dropdownStates[index] ? "-" : "+"}
-                </span>
-              </div>
-
-              {dropdownStates[index] && (
-                <div className="mt-4">
-                  {item.image && (
-                    <div className="flex justify-center items-center mb-4">
-                      <img
-                        src={item.image}
-                        className="h-40 object-cover rounded-lg"
-                        alt={item.item}
-                      />
-                    </div>
-                  )}
-
-                  {/* Main Portion List - Single Column Layout */}
-                  {item.portions ? (
-                    <div className="flex flex-col space-y-3">
-                      {Object.entries(item.portions).map(([portion, price]) => (
-                        <div
-                          key={portion}
-                          className="text-gray-800 flex justify-around items-center bg-gray-100 p-2 rounded shadow w-full"
-                        >
-                          <span className="font-bold">{portion.toUpperCase()}</span>
-
-                          {/* NV Badge Here */}
-                          {/* <div className="w-10 h-10 flex items-center justify-center rounded-full bg-red-500 text-white font-bold">
-                            NV
-                          </div> */}
-
-                          <span className="text-lg">Rs. {price}</span>
-                        </div>
-                      ))}
-
-                    </div>
-                  ) : (
-                    <p className="text-gray-800 text-center text-lg">
-                      Price: Rs. {item.price}
-                    </p>
-                  )}
-
-                  {/* Mandi Chicken Only Section */}
-                  {item.mandiChickenOnly && (
-                    <div className="mt-6">
-                      <h3 className="text-xl font-semibold text-center text-gray-800 ">
-                        {item.item.replace(/Mandi$/, "").trim()} Only
-                      </h3>
-
-                      <div className="flex flex-wrap justify-center gap-4 mt-3">
-                        {Object.entries(item.mandiChickenOnly).map(([portion, price]) => (
-                          <div key={portion} className="text-gray-800 bg-gray-200 p-3 rounded-lg shadow-md text-center">
-                            <span className="block font-bold">{portion.toUpperCase()}</span>
-                            <span className="block text-lg">Rs. {price}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                </div>
-              )}
-            </div>
-          ))}
-      </div>
-
-    </div>
-  );
-};
 
 export default MenuList;

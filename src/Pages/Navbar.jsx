@@ -11,6 +11,11 @@ const Navbar = () => {
     return "bg-transparent"; 
   };
 
+  // const getNavbarPosition = () => {
+  //   return location.pathname === "/" ? "absolute" : "relative";
+  // };
+  
+
   return (
     <div>
       {/* Navbar Container */}
