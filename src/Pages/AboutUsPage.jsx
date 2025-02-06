@@ -3,8 +3,8 @@ import { BiRun } from "react-icons/bi";
 
 const AboutUsPage = () => {
   return (
-    <div className="flex justify-center items-center m-0 p-0 flex-col">
-      <div className="flex flex-col space-y-7 w-full max-w-7xl text-center p-10 bg-orange-600 ">
+    <div className="flex justify-center items-center flex-col">
+      <div className="flex flex-col space-y-7 w-full max-w-7xl text-center p-10 bg-lime-900 ">
         <div>
           <h2 className="text-4xl font-bold text-white text-left">CLASSIC ARABIAN MANDI</h2>
         </div>
@@ -26,12 +26,10 @@ const AboutUsPage = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 space-y-7 w-full max-w-7xl text-center p-10 bg-blue-700 ">
         <div className=''>
           <h2 className="text-4xl font-bold text-white text-left">OUR STORY</h2>
-          {/* Heading */}
 
-          {/* Paragraph */}
           <div className="text-white space-y-4 text-left mt-4">
             <p>
-              When four school friends—Salam Kottammal, Rafeek EK, Suabir Pc, Shihabudheen realized we were bound together not only by our deep friendship but also by a shared passion for food, we decided to turn this into something tangible. As expatriates, we felt that it was not enough to write this only for the Arab world, we should also enjoy it for the people of Kerala. After returning home after ending our expatriate life, we started from Chemmad. Our weekend adventures, searching for new and exciting flavors, had developed into a dream: to start a venture that could bring our culinary discoveries to others. And so, our brainchild, Rabeeh raidan was born. We chose to launch in Chammad, a town in Malappuram, Kerala, where the food culture was still developing.
+              When five school friends—Salam Kottammal, Rafeek EK, Suabir Pc, Shihabudheen, Sherif realized we were bound together not only by our deep friendship but also by a shared passion for food, we decided to turn this into something tangible. As expatriates, we felt that it was not enough to write this only for the Arab world, we should also enjoy it for the people of Kerala. After returning home after ending our expatriate life, we started from Chemmad. Our weekend adventures, searching for new and exciting flavors, had developed into a dream: to start a venture that could bring our culinary discoveries to others. And so, our brainchild, Rabeeh raidan was born. We chose to launch in Chammad, a town in Malappuram, Kerala, where the food culture was still developing.
             </p>
 
             <p>
