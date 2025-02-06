@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { MdLogin } from "react-icons/md";
 import ScrollingText from '../Pages/utils/ScrollingText.jsx'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const MenuList = ({ menu }) => {
   return (
@@ -76,13 +77,15 @@ const CategorySection = ({ categoryName, items }) => {
                 {/* <div> */}
                   {item.image && (
                     // <div className="flex justify-center items-center mb-4">
-                      <img
-                        src={item.image}
-                        className="h-36 object-cover rounded-lg"
-                        alt={item.item}
-                        // onLoad={}
-                        // loading="lazy"
-                      />
+                    <LazyLoadImage
+                    // <img
+                    src={item.image}
+                    className="h-36 object-cover rounded-lg"
+                    alt={item.item}
+                    // onLoad={}
+                    // loading="lazy"
+                    // />
+                    />
                     // </div>
                   )}
                 {/* </div> */}

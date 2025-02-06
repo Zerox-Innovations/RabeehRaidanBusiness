@@ -1,5 +1,5 @@
 import chickenMandi from "/images/chickenmandi.webp";
-import alfamMandi from "/images/alfammandi.png";
+import alfamMandi from "/images/alfammandi.webp";
 import pollichathMandi from "/images/pollichathmandi.webp";
 import shawayaMandi from "/images/shawwaya.webp";
 import kanthariMandi from "/images/kantharimandi.webp";
@@ -7,7 +7,7 @@ import PeriPeriMandi from "/images/perperimandi.webp";
 import honeyMandi from "/images/honeymandi.webp";
 import beefMandi from "/images/beefmandi.webp";
 import muttonMandi from "/images/muttonmandi.webp";
-import broast from "/images/broast.png";
+import broast from "/images/broast.webp";
 
 
 
