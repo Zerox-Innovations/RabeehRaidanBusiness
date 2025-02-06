@@ -38,7 +38,7 @@ const AboutUsPage = () => {
           </div>
         </div>
       <div>
-          <img src="/images/home.png" alt="" />
+          <img src="/images/home.webp" alt="" />
       </div>
       </div>
     </div>
