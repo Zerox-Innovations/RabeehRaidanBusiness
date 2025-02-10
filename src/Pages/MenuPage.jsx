@@ -1,31 +1,12 @@
-import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+// 
+
+import { useState } from "react";
 import menuData from "../Data/menuData";
 import MenuList from "../Components/MenuList";
 import BranchSelector from "../Components/BranchSelector";
 
 const MenuPage = () => {
-  const { id } = useParams(); // Get the branch ID from the URL
-  const [selectedBranch, setSelectedBranch] = useState(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setLoading(true);
-  
-    const branch = menuData.restaurants.find(
-      (branch) => branch.id === parseInt(id)
-    );
-  
-    if (branch) {
-      console.log(branch.menu); // Check the structure of the menu
-      setSelectedBranch(branch);
-    } else {
-      setSelectedBranch(null);
-    }
-  
-    setLoading(false);
-  }, [id]);
-  
+  const [selectedBranch, setSelectedBranch] = useState(menuData.restaurants[0]); // Default to first branch
 
   const handleSelectBranch = (branchId) => {
     const branch = menuData.restaurants.find((branch) => branch.id === branchId);
@@ -34,23 +15,19 @@ const MenuPage = () => {
 
   return (
     <div>
-      {loading ? (
-        <div>Loading...</div>
-      ) : selectedBranch ? (
+      {selectedBranch ? (
         <MenuList menu={selectedBranch.menu} />
       ) : (
         <div className="text-center text-red-500 font-semibold">
-          ⚠️ Branch not found!
+          ⚠️ No branches available!
         </div>
       )}
 
       {/* Branch Selector */}
-      {!selectedBranch && (
-        <BranchSelector
-          branches={menuData.restaurants}
-          onSelectBranch={handleSelectBranch}
-        />
-      )}
+      {/* <BranchSelector
+        branches={menuData.restaurants}
+        onSelectBranch={handleSelectBranch}
+      /> */}
     </div>
   );
 };
