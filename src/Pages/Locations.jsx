@@ -1,5 +1,4 @@
-import React from 'react';
-import Navbar from './Navbar';
+
 import ScrollingText from './utils/ScrollingText';
 
 // Sample branch data
@@ -13,13 +12,13 @@ const branches = [
   },
   {
     name: " Valanchery",
-    address: "Padikkap karuvankallu road parambil peedika",
+    address: "Padikkal karuvankallu road parambil peedika",
     contact: "7012791427 | 7510791427",
     image: "/images/Gallery/1.jpg",
     mapLink: "https://www.google.com/maps/place/Rabeeh+Raidan+Kuzhimandhi/@10.8985535,76.0577552,17z/data=!4m14!1m7!3m6!1s0x3ba7b72325752001:0x9424ec37a8f856c5!2sRabeeh+Raidan+Kuzhimandhi!8m2!3d10.8985482!4d76.0603301!16s%2Fg%2F11lw88q7d6!3m5!1s0x3ba7b72325752001:0x9424ec37a8f856c5!8m2!3d10.8985482!4d76.0603301!16s%2Fg%2F11lw88q7d6?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D",
   },
   {
-    name: " Areekkode Puthalam",
+    name: " Areekode Puthalam",
     address: "kondotty road areakode puthalam",
     contact: "9656843820 | 7012703646",
     image: "/images/Gallery/9.jpg",
@@ -72,7 +71,7 @@ const Locations = () => {
 
         <div className='flex flex-col'>
           <div>
-            <h1 className="text-4xl text-softOrange font-bold text-center mb-12">FIND US</h1>
+            <h1 className="text-5xl text-softOrange font-bold text-center mb-12" style={{ fontFamily: 'DM Sans, sans-serif' }}>FIND US</h1>
           </div>
           <div className="space-y-8 flex flex-col justify-center gap-8 px-4 md:px-12 lg:px-20 xl:px-32">
             {branches.map((branch, index) => (
@@ -89,13 +88,13 @@ const Locations = () => {
 
                 {/* Branch Details */}
                 <div className="flex-1 text-center md:text-left">
-                  <h2 className="text-xl lg:text-3xl xl:text-4xl font-bold text-softOrange">{branch.name}</h2>
+                  <h2 className="text-xl lg:text-3xl xl:text-4xl font-bold text-softOrange " style={{ fontFamily: 'DM Sans, sans-serif' }}>{branch.name}</h2>
                   <p className="text-gray-600 mt-2 text-sm sm:text-base">{branch.address}</p>
                   <p className="text-gray-600 mt-2 text-sm sm:text-base">Contact: {branch.contact}</p>
 
                   <div className="mt-3">
                     <button
-                      onClick={branch.mapLink}
+                      onClick={() => window.open(branch.mapLink, "_blank")} // Opens in a new tab
                       className="bg-blue-500 p-3 px-6 text-white rounded-xl font-bold hover:bg-blue-600 transition"
                     >
                       Navigate Me
@@ -105,8 +104,6 @@ const Locations = () => {
               </div>
             ))}
           </div>
-
-
         </div>
       </div>
       <div className="relative top-0 left-0 w-full z-40 bg-gray-900 text-white">

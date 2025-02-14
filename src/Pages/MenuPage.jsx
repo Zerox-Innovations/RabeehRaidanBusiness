@@ -1,17 +1,18 @@
-// 
-
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import menuData from "../Data/menuData";
 import MenuList from "../Components/MenuList";
-import BranchSelector from "../Components/BranchSelector";
 
-const MenuPage = () => {
-  const [selectedBranch, setSelectedBranch] = useState(menuData.restaurants[0]); // Default to first branch
+const MenuPage = ({ branchId }) => {
+  const { id } = useParams();
+  const [selectedBranch, setSelectedBranch] = useState(null);
 
-  const handleSelectBranch = (branchId) => {
-    const branch = menuData.restaurants.find((branch) => branch.id === branchId);
+  useEffect(() => {
+    const branch = menuData.restaurants.find(
+      (branch) => branch.id === parseInt(branchId || id)
+    );
     setSelectedBranch(branch);
-  };
+  }, [branchId, id]);
 
   return (
     <div>
@@ -22,12 +23,6 @@ const MenuPage = () => {
           ⚠️ No branches available!
         </div>
       )}
-
-      {/* Branch Selector */}
-      {/* <BranchSelector
-        branches={menuData.restaurants}
-        onSelectBranch={handleSelectBranch}
-      /> */}
     </div>
   );
 };
