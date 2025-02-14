@@ -36,9 +36,18 @@ function AppContent() {
         <Route path="/delivery" element={<DeliveryPage />} />
         <Route path="/find-us" element={<Locations />} />
         <Route path="/gallery" element={<Gallery />} />
-        <Route path="/qrcode" element={<QRCodes />} />
+        <Route path="/qrcodes" element={<QRCodes />} />
 
-        <Route path="/menu2/" element={<MenuPage />} />
+        {/* <Route path="/menu2/" element={<MenuPage />} /> */}
+
+        <Route path="/menu1" element={<MenuPage branchId={1} />} />
+        <Route path="/menu2" element={<MenuPage branchId={2} />} />
+        <Route path="/menu3" element={<MenuPage branchId={3} />} />
+        <Route path="/menu4" element={<MenuPage branchId={4} />} />
+        <Route path="/menu5" element={<MenuPage branchId={5} />} />
+        <Route path="/menu6" element={<MenuPage branchId={6} />} />
+        <Route path="/menu7" element={<MenuPage branchId={7} />} />
+        <Route path="/menu8" element={<MenuPage branchId={8} />} />
 
       </Routes>
 

@@ -119,7 +119,7 @@ const HomePage = () => {
           </button>
 
           {/* Menu Image (shown only on lg screens) */}
-          <div className="hidden lg:block">
+          <div className="hidden md:block">
             <img src="images/menu.png" alt="Menu" className="h-32" />
           </div>
         </div>

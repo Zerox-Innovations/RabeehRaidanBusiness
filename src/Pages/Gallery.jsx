@@ -16,7 +16,7 @@ const Gallery = () => {
       <div className="flex flex-col items-center py-12 mt-48 md:mt-64 px-4">
         {/* Heading Section */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-softOrange mb-4">OUR GALLERY</h1>
+          <h1 className="text-5xl font-bold text-softOrange mb-4" style={{ fontFamily: 'DM Sans, sans-serif' }}>OUR GALLERY</h1>
           <p className="text-lg text-gray-600">
             Explore moments we've captured, from stunning landscapes to beautiful memories.
           </p>

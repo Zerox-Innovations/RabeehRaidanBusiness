@@ -7,11 +7,11 @@ const WhoWeAre = () => {
       <div className="relative top-0 left-0 w-full z-40 bg-gray-900 text-white mb-5">
         <ScrollingText />
       </div>
-      <div className="max-w-7xl mx-auto mt-52 md:mt-36 px-8 mb-5">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center min-h-screen">
+      <div className="max-w-7xl mx-auto mt-52 md:mt-80 px-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Left Column - Text */}
           <div>
-            <h2 className="text-softOrange text-5xl font-bold mb-6">WHO WE ARE</h2>
+            <h2 className="text-softOrange text-5xl font-bold mb-6" style={{ fontFamily: 'DM Sans, sans-serif' }}>WHO WE ARE</h2>
             <p className="text-lg text-gray-800 leading-relaxed">
               Rabeeh Raidan's establishment offers quality Arabian-flavored mandis, grilled items, and a variety of alfams.
               As the days passed, they saw a large number of guests pouring in from different parts of Malabar, which led them to expand further.
