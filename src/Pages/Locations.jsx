@@ -42,7 +42,7 @@ const branches = [
     name: " Edavanna",
     address: " Areekode othayi road Edavanna, Kerala 676541",
     contact: "9605302313 | 95263 07313",
-    image: "/images/Gallery/11.jpg",
+    image: "/images/Gallery/6.jpg",
     mapLink: "https://www.google.com/maps/place/Rabeeh+Raidan+Kuzhimanthi+Edavanna/@11.2210882,76.1387896,17z/data=!3m1!4b1!4m6!3m5!1s0x3ba639d4fe02fa9f:0x20b02cbd487e0cd7!8m2!3d11.2210829!4d76.1413645!16s%2Fg%2F11l74lgmgh?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D",
   },
   {

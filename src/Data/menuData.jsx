@@ -48,8 +48,8 @@ const menuData = {
             "item": "Shawaya Mandi",
             "image": shawayaMandi,
             "price": {
-              "mandi": 170,
-              "mandiChickenOnly": 110,
+              "mandi": 180,
+              "mandiChickenOnly": 120,
             }
           },
           {
@@ -111,7 +111,15 @@ const menuData = {
           {
             "item": "Mandi Rice Only",
             "price": {
-              "mandi": 90,
+              "mandi": 80,
+            }
+          },
+          {
+            "item": "Madhooth",
+            "price": {
+              "Chicken": 700,
+              "Beef": 780,
+              "Mutton": 1250,
             }
           }
         ],
@@ -133,19 +141,18 @@ const menuData = {
             {
               name: "Hot Drinks",
               items: [
-                { name: "Tea", price: 20 },
-                { name: "Black Tea", price: 15 },
-                { name: "Coffee", price: 30 },
-                { name: "Ginger Tea", price: 25 },
+                { name: "Lime Tea", price: 15 },
+                { name: "Mint Tea", price: 15 },
               ],
             },
             {
               name: "Cold Drinks",
               items: [
-                { name: "Lime Juice", price: 40 },
-                { name: "Mint Lemonade", price: 50 },
-                { name: "Falooda", price: 100 },
-                { name: "Cold Coffee", price: 80 },
+                { name: "Lime Soda", price: 15 },
+                { name: "Lime Juice", price: 20 },
+                { name: "Mint Lime", price: 30 },
+                { name: "Pineapple Lime", price: 30 },
+                { name: "Grape Lime", price: 30 },
               ],
             }
           ],
@@ -339,19 +346,18 @@ const menuData = {
             {
               name: "Hot Drinks",
               items: [
-                { name: "Tea", price: 20 },
-                { name: "Black Tea", price: 15 },
-                { name: "Coffee", price: 30 },
-                { name: "Ginger Tea", price: 25 },
+                { name: "Lime Tea", price: 15 },
+                { name: "Mint Tea", price: 15 },
               ],
             },
             {
               name: "Cold Drinks",
               items: [
-                { name: "Lime Juice", price: 40 },
-                { name: "Mint Lemonade", price: 50 },
-                { name: "Falooda", price: 100 },
-                { name: "Cold Coffee", price: 80 },
+                { name: "Lime Soda", price: 15 },
+                { name: "Lime Juice", price: 20 },
+                { name: "Mint Lime", price: 30 },
+                { name: "Pineapple Lime", price: 30 },
+                { name: "Grape Lime", price: 30 },
               ],
             }
           ],
@@ -455,7 +461,15 @@ const menuData = {
           {
             "item": "Mandi Rice Only",
             "price": {
-              "mandi": 90,
+              "mandi": 80,
+            }
+          },
+          {
+            "item": "Madhooth",
+            "price": {
+              "Chicken": 700,
+              "Beef": 780,
+              "Mutton": 1250,
             }
           }
         ],
@@ -477,19 +491,18 @@ const menuData = {
             {
               name: "Hot Drinks",
               items: [
-                { name: "Tea", price: 20 },
-                { name: "Black Tea", price: 15 },
-                { name: "Coffee", price: 30 },
-                { name: "Ginger Tea", price: 25 },
+                { name: "Lime Tea", price: 15 },
+                { name: "Mint Tea", price: 15 },
               ],
             },
             {
               name: "Cold Drinks",
               items: [
-                { name: "Lime Juice", price: 40 },
-                { name: "Mint Lemonade", price: 50 },
-                { name: "Falooda", price: 100 },
-                { name: "Cold Coffee", price: 80 },
+                { name: "Lime Soda", price: 15 },
+                { name: "Lime Juice", price: 20 },
+                { name: "Mint Lime", price: 30 },
+                { name: "Pineapple Lime", price: 30 },
+                { name: "Grape Lime", price: 30 },
               ],
             }
           ],
@@ -593,7 +606,15 @@ const menuData = {
           {
             "item": "Mandi Rice Only",
             "price": {
-              "mandi": 90,
+              "mandi": 80,
+            }
+          },
+          {
+            "item": "Madhooth",
+            "price": {
+              "Chicken": 700,
+              "Beef": 780,
+              "Mutton": 1250,
             }
           }
         ],
@@ -615,19 +636,18 @@ const menuData = {
             {
               name: "Hot Drinks",
               items: [
-                { name: "Tea", price: 20 },
-                { name: "Black Tea", price: 15 },
-                { name: "Coffee", price: 30 },
-                { name: "Ginger Tea", price: 25 },
+                { name: "Lime Tea", price: 15 },
+                { name: "Mint Tea", price: 15 },
               ],
             },
             {
               name: "Cold Drinks",
               items: [
-                { name: "Lime Juice", price: 40 },
-                { name: "Mint Lemonade", price: 50 },
-                { name: "Falooda", price: 100 },
-                { name: "Cold Coffee", price: 80 },
+                { name: "Lime Soda", price: 15 },
+                { name: "Lime Juice", price: 20 },
+                { name: "Mint Lime", price: 30 },
+                { name: "Pineapple Lime", price: 30 },
+                { name: "Grape Lime", price: 30 },
               ],
             }
           ],
@@ -697,6 +717,14 @@ const menuData = {
             }
           },
           {
+            "item": "Beef Mandi",
+            "image": beefMandi,
+            "price": {
+              "mandi": 210,
+              "mandiChickenOnly": 140,
+            }
+          },
+          {
             "item": "Beef Pollichath Mandi",
             "image": beefMandi,
             "price": {
@@ -725,6 +753,14 @@ const menuData = {
             "price": {
               "mandi": 80,
             }
+          },
+          {
+            "item": "Madhooth",
+            "price": {
+              "Chicken": 750,
+              "Beef": 850,
+              "Mutton": 1250,
+            }
           }
         ],
         "Broasted Chicken": [
@@ -745,19 +781,18 @@ const menuData = {
             {
               name: "Hot Drinks",
               items: [
-                { name: "Tea", price: 20 },
-                { name: "Black Tea", price: 15 },
-                { name: "Coffee", price: 30 },
-                { name: "Ginger Tea", price: 25 },
+                { name: "Lime Tea", price: 15 },
+                { name: "Mint Tea", price: 15 },
               ],
             },
             {
               name: "Cold Drinks",
               items: [
-                { name: "Lime Juice", price: 40 },
-                { name: "Mint Lemonade", price: 50 },
-                { name: "Falooda", price: 100 },
-                { name: "Cold Coffee", price: 80 },
+                { name: "Lime Soda", price: 15 },
+                { name: "Lime Juice", price: 20 },
+                { name: "Mint Lime", price: 30 },
+                { name: "Pineapple Lime", price: 30 },
+                { name: "Grape Lime", price: 30 },
               ],
             }
           ],
@@ -861,7 +896,15 @@ const menuData = {
           {
             "item": "Mandi Rice Only",
             "price": {
-              "mandi": 90,
+              "mandi": 80,
+            }
+          },
+          {
+            "item": "Madhooth",
+            "price": {
+              "Chicken": 700,
+              "Beef": 780,
+              "Mutton": 1250,
             }
           }
         ],
@@ -883,24 +926,22 @@ const menuData = {
             {
               name: "Hot Drinks",
               items: [
-                { name: "Tea", price: 20 },
-                { name: "Black Tea", price: 15 },
-                { name: "Coffee", price: 30 },
-                { name: "Ginger Tea", price: 25 },
+                { name: "Lime Tea", price: 15 },
+                { name: "Mint Tea", price: 15 },
               ],
             },
             {
               name: "Cold Drinks",
               items: [
-                { name: "Lime Juice", price: 40 },
-                { name: "Mint Lemonade", price: 50 },
-                { name: "Falooda", price: 100 },
-                { name: "Cold Coffee", price: 80 },
+                { name: "Lime Soda", price: 15 },
+                { name: "Lime Juice", price: 20 },
+                { name: "Mint Lime", price: 30 },
+                { name: "Pineapple Lime", price: 30 },
+                { name: "Grape Lime", price: 30 },
               ],
             }
           ],
         },
-
       }
     },
     {
@@ -1000,7 +1041,15 @@ const menuData = {
           {
             "item": "Mandi Rice Only",
             "price": {
-              "mandi": 90,
+              "mandi": 80,
+            }
+          },
+          {
+            "item": "Madhooth",
+            "price": {
+              "Chicken": 700,
+              "Beef": 780,
+              "Mutton": 1250,
             }
           }
         ],
@@ -1022,19 +1071,18 @@ const menuData = {
             {
               name: "Hot Drinks",
               items: [
-                { name: "Tea", price: 20 },
-                { name: "Black Tea", price: 15 },
-                { name: "Coffee", price: 30 },
-                { name: "Ginger Tea", price: 25 },
+                { name: "Lime Tea", price: 15 },
+                { name: "Mint Tea", price: 15 },
               ],
             },
             {
               name: "Cold Drinks",
               items: [
-                { name: "Lime Juice", price: 40 },
-                { name: "Mint Lemonade", price: 50 },
-                { name: "Falooda", price: 100 },
-                { name: "Cold Coffee", price: 80 },
+                { name: "Lime Soda", price: 15 },
+                { name: "Lime Juice", price: 20 },
+                { name: "Mint Lime", price: 30 },
+                { name: "Pineapple Lime", price: 30 },
+                { name: "Grape Lime", price: 30 },
               ],
             }
           ],
@@ -1138,7 +1186,15 @@ const menuData = {
           {
             "item": "Mandi Rice Only",
             "price": {
-              "mandi": 90,
+              "mandi": 80,
+            }
+          },
+          {
+            "item": "Madhooth",
+            "price": {
+              "Chicken": 700,
+              "Beef": 780,
+              "Mutton": 1250,
             }
           }
         ],
@@ -1160,19 +1216,18 @@ const menuData = {
             {
               name: "Hot Drinks",
               items: [
-                { name: "Tea", price: 20 },
-                { name: "Black Tea", price: 15 },
-                { name: "Coffee", price: 30 },
-                { name: "Ginger Tea", price: 25 },
+                { name: "Lime Tea", price: 15 },
+                { name: "Mint Tea", price: 15 },
               ],
             },
             {
               name: "Cold Drinks",
               items: [
-                { name: "Lime Juice", price: 40 },
-                { name: "Mint Lemonade", price: 50 },
-                { name: "Falooda", price: 100 },
-                { name: "Cold Coffee", price: 80 },
+                { name: "Lime Soda", price: 15 },
+                { name: "Lime Juice", price: 20 },
+                { name: "Mint Lime", price: 30 },
+                { name: "Pineapple Lime", price: 30 },
+                { name: "Grape Lime", price: 30 },
               ],
             }
           ],

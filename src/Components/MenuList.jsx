@@ -30,14 +30,14 @@ const MenuList = ({ menu }) => {
             ) : (
               <CategorySection categoryName={category} items={menu[category]} />
             )}
-          </div>  
+          </div>
         ))}
       </div>
       <div className="py-5">
-          <ScrollingText/>
-          <div className="mb-4 flex justify-center mt-4">
-             <p className="text-softOrange">© Rabeeh Raidan 2025. All Rights Reserved.</p>
-          </div>
+        <ScrollingText />
+        <div className="mb-4 flex justify-center mt-4">
+          <p className="text-softOrange">© Rabeeh Raidan 2025. All Rights Reserved.</p>
+        </div>
       </div>
     </>
   );
@@ -75,19 +75,19 @@ const CategorySection = ({ categoryName, items }) => {
             >
               <div className="flex flex-col justify-around items-center">
                 {/* <div> */}
-                  {item.image && (
-                    // <div className="flex justify-center items-center mb-4">
-                    <LazyLoadImage
+                {item.image && (
+                  // <div className="flex justify-center items-center mb-4">
+                  <LazyLoadImage
                     // <img
                     src={item.image}
                     className="h-36 object-cover rounded-lg"
                     alt={item.item}
-                    // onLoad={}
-                    // loading="lazy"
-                    // />
-                    />
-                    // </div>
-                  )}
+                  // onLoad={}
+                  // loading="lazy"
+                  // />
+                  />
+                  // </div>
+                )}
                 {/* </div> */}
                 <h4 className="text-2xl font-semibold text-white lg:text-2xl" style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }} >
                   {item.item}
@@ -99,36 +99,53 @@ const CategorySection = ({ categoryName, items }) => {
                   {/* Handle different price structures */}
                   {item.price ? (
                     <div className="flex flex-col justify-around text-center p-4 transition-all duration-300">
-                      <div className="flex justify-between md:justify-around items-center mb-2">
-                        <p className="text-white text-2xl uppercase" style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}>
-                          {item.item}
-                        </p>
-                        <p className="text-white text-2xl " style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}>
-                          ₹{item.price.mandi}
-                        </p>
-                      </div>
+                      {/* <p className="text-white text-2xl uppercase" style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}>
+                        {item.item}
+                      </p> */}
 
-                      {item.price.mandiChickenOnly && (
-                        <div className="flex justify-between md:justify-around items-center mt-2">
-                          <p className="text-white text-2xl  uppercase" style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}>
-                            {item.item.replace(/Mandi$/, "").trim()} Only{" "}
-                          </p>
-                          <p className="text-white text-2xl " style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}>
-                            ₹{item.price.mandiChickenOnly}
-                          </p>
+                      {/* Handle different price structures */}
+                      {typeof item.price === "object" ? (
+                        <div className="flex flex-col gap-2">
+                          {Object.entries(item.price).map(([variant, price], idx) => (
+                            <div key={variant} className="flex md:justify-around justify-between w-full">
+                              <p
+                                className="text-white text-2xl uppercase w-1/2 text-left"
+                                style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}
+                              >
+                                {variant === "mandi"
+                                  ? "Mandi"
+                                  : variant === "mandiChickenOnly"
+                                    ? `${item.item.replace(/Mandi$/i, "").trim()} Only`
+                                    : variant}
+                              </p>
+                              <p
+                                className="text-white text-2xl text-right w-1/2 "
+                                style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}
+                              >
+                                ₹{price}
+                              </p>
+                            </div>
+                          ))}
                         </div>
+                      ) : (
+                        <p className="text-white text-2xl" style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}>
+                          ₹{item.price}
+                        </p>
                       )}
                     </div>
                   ) : item.portions ? (
                     <div className="flex flex-col w-full px-4 gap-3">
                       {Object.keys(item.portions).map((size) => (
                         <div key={size} className="flex justify-between w-full">
-                          <p style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }} className="text-white text-xl">{size.toUpperCase()}</p>
-                          <p style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }} className="text-white text-xl font-semibold">₹ {item.portions[size]}</p>
+                          <p style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }} className="text-white text-xl">
+                            {size.toUpperCase()}
+                          </p>
+                          <p style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }} className="text-white text-xl font-semibold">
+                            ₹ {item.portions[size]}
+                          </p>
                         </div>
                       ))}
                     </div>
-
                   ) : (
                     <p className="text-gray-800 text-center text-lg">Price Not Available</p>
                   )}
