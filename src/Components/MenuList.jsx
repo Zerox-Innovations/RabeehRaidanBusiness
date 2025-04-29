@@ -25,11 +25,21 @@ const MenuList = ({ menu }) => {
         {/* Render Each Category */}
         {Object.keys(menu).map((category) => (
           <div key={category} className="mb-10">
-            {category === "asianCuisine" || category === "Drinks" ? (
-              <AsianCuisineSection data={menu[category]} />
-            ) : (
-              <CategorySection categoryName={category} items={menu[category]} />
-            )}
+            <div key={category} className="mb-10">
+              {category === "asianCuisine" || category === "Drinks" ? (
+                <AsianCuisineSection data={menu[category]} />
+              ) : category === "rotties" ? (
+                <>
+                  <h2 className="text-4xl mb-2 text-black text-center font-bold" style={{ fontFamily: 'Oleo Script' }}>
+                    Rotties
+                  </h2>
+                  <RottiesSection items={menu[category]} />
+                </>
+              ) : (
+                <CategorySection categoryName={category} items={menu[category]} />
+              )}
+
+            </div>
           </div>
         ))}
       </div>
@@ -113,7 +123,7 @@ const CategorySection = ({ categoryName, items }) => {
                                 style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}
                               >
                                 {variant === "mandi"
-                                  ? "Mandi"
+                                  ? item.item
                                   : variant === "mandiChickenOnly"
                                     ? `${item.item.replace(/Mandi$/i, "").trim()} Only`
                                     : variant}
@@ -158,6 +168,68 @@ const CategorySection = ({ categoryName, items }) => {
     </div>
   );
 };
+
+const RottiesSection = ({ items }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="py-4">
+      {/* Rotties Block */}
+
+      <div
+        className="p-5 rounded-lg shadow-lg border-2 border-white bg-yellow-300 cursor-pointer hover:bg-yellow-400 transition-all"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <div className="flex items-center justify-between">
+          <h4
+            className="text-2xl font-semibold text-white lg:text-2xl"
+            style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}
+          >
+            Rotties
+          </h4>
+          <span className="text-2xl font-bold text-white w-8 h-8 flex items-center justify-center rounded-full">
+            {isOpen ? "-" : "+"}
+          </span>
+        </div>
+      </div>
+
+      {/* Items inside Rotties */}
+      {isOpen && (
+        <div className="flex flex-col gap-4 bg-yellow-300 p-3 mt-1 rounded-b-lg">
+          {items.map((item, index) => (
+            <div key={index} className="p-4 flex flex-col justify-around items-center">
+              {item.image && (
+                <div className="mb-4">
+                  <img
+                    src={item.image}
+                    alt={item.item}
+                    className="w-28 h-28 object-cover rounded-lg"
+                  />
+                </div>
+              )}
+              <div className="flex justify-between md:justify-around text-center w-full px-4">
+                <h4
+                  className="text-2xl text-white uppercase"
+                  style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}
+                >
+                  {item.item}
+                </h4>
+                <p
+                  className="text-white text-2xl uppercase"
+                  style={{ fontFamily: 'Ubuntu Condensed, sans-serif' }}
+                >
+                  ₹ {item.price}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
+
 
 
 const AsianCuisineSection = ({ data }) => {

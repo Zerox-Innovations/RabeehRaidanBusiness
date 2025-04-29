@@ -24,7 +24,7 @@ const menuData = {
             "item": "Chicken Mandi",
             "image": chickenMandi,
             "price": {
-              "mandi": 150,
+              "mandi": 160,
               "mandiChickenOnly": 90
             }
           },
@@ -32,16 +32,16 @@ const menuData = {
             "item": "Alfham Mandi",
             "image": alfamMandi,
             "price": {
-              "mandi": 170,
-              "mandiChickenOnly": 110,
+              "mandi": 180,
+              "mandiChickenOnly": 120,
             }
           },
           {
             "item": "Chicken Pollichath Mandi",
             "image": pollichathMandi,
             "price": {
-              "mandi": 170,
-              "mandiChickenOnly": 110,
+              "mandi": 180,
+              "mandiChickenOnly": 120,
             }
           },
           {
@@ -56,62 +56,62 @@ const menuData = {
             "item": "Kanthari Alfham Mandi",
             "image": kanthariMandi,
             "price": {
-              "mandi": 170,
-              "mandiChickenOnly": 110,
+              "mandi": 180,
+              "mandiChickenOnly": 120,
             }
           },
           {
             "item": "Peri Peri Alfham Mandi",
             "image": PeriPeriMandi,
             "price": {
-              "mandi": 180,
-              "mandiChickenOnly": 120,
+              "mandi": 190,
+              "mandiChickenOnly": 130,
             }
           },
           {
             "item": "Honey Chicken Mandi",
             "image": honeyMandi,
             "price": {
-              "mandi": 180,
-              "mandiChickenOnly": 120,
+              "mandi": 190,
+              "mandiChickenOnly": 130,
             }
           },
           {
             "item": "Beef Mandi",
             "image": beefMandi,
             "price": {
-              "mandi": 200,
-              "mandiChickenOnly": 130,
+              "mandi": 210,
+              "mandiChickenOnly": 140,
             }
           },
           {
             "item": "Beef Pollichath Mandi",
             "image": beefMandi,
             "price": {
-              "mandi": 210,
-              "mandiChickenOnly": 140,
+              "mandi": 220,
+              "mandiChickenOnly": 160,
             }
           },
           {
             "item": "Beef Kanthari Mandi",
             "image": beefMandi,
             "price": {
-              "mandi": 210,
-              "mandiChickenOnly": 140,
+              "mandi": 220,
+              "mandiChickenOnly": 160,
             }
           },
           {
             "item": "Mutton Mandi",
             "image": muttonMandi,
             "price": {
-              "mandi": 300,
-              "mandiChickenOnly": 230,
+              "mandi": 330,
+              "mandiChickenOnly": 260,
             }
           },
           {
             "item": "Mandi Rice Only",
             "price": {
-              "mandi": 80,
+              "mandi": 90,
             }
           },
           {
@@ -135,6 +135,76 @@ const menuData = {
             }
           }
         ],
+        rotties: [
+          {
+            item: "Thandoori rotti",
+            price: 20,
+          },
+          {
+            item: "Butter Nana",
+            price: 30,
+          },
+          {
+            item: "Plain Nana",
+            price: 25,
+          }
+        ],
+        "asianCuisine":  {
+          "heading": "Asian Cuisine",
+          "categories": [
+            {
+              "name": "Fried Rice",
+              "items": [
+                {
+                  "name": "Veg Fried Rice",
+                  "price": 130
+                },
+                {
+                  "name": "Egg Fried Rice",
+                  "price": 150
+                },
+                {
+                  "name": "Chicken Fried Rice",
+                  "price": 170
+                },
+                {
+                  "name": "Gobi Manchuriyan",
+                  "price": 80
+                }
+              ]
+            },
+            {
+              "name": "Noodles",
+              "items": [
+                {
+                  "name": "Veg Noodles",
+                  "price": 130
+                },
+                {
+                  "name": "Egg Noodles",
+                  "price": 150
+                },
+                {
+                  "name": "Chicken Noodles",
+                  "price": 170
+                }
+              ]
+            },
+            {
+              "name": "Chicken Dishes",
+              "items": [
+                {
+                  "name": "Garlic Chicken",
+                  "price": 150
+                },
+                {
+                  "name": "Chicken Kondattam",
+                  "price": 150
+                },
+              ]
+            }
+          ]
+        },
         Drinks: {
           heading: "Drinks",
           categories: [
@@ -253,14 +323,6 @@ const menuData = {
             }
           },
           {
-            "item": "Mandi Rice",
-            "image": chickenMandi,
-            "price": {
-              "mandi": 350,
-              "mandiChickenOnly": 280,
-            }
-          },
-          {
             "item": "Mandi Rice Only",
             "price": {
               "mandi": 90,
@@ -366,7 +428,7 @@ const menuData = {
     },
     {
       "id": 3,
-      "name": "Areekode Puthalam",
+      "name": "Areekkod Puthalam",
       "description": "A supper mandhi",
       "menu": {
         "Special Arabian Mandi": [
@@ -374,7 +436,7 @@ const menuData = {
             "item": "Chicken Mandi",
             "image": chickenMandi,
             "price": {
-              "mandi": 150,
+              "mandi": 160,
               "mandiChickenOnly": 90
             }
           },
@@ -382,86 +444,86 @@ const menuData = {
             "item": "Alfham Mandi",
             "image": alfamMandi,
             "price": {
-              "mandi": 170,
-              "mandiChickenOnly": 110,
+              "mandi": 180,
+              "mandiChickenOnly": 120,
             }
           },
           {
             "item": "Chicken Pollichath Mandi",
             "image": pollichathMandi,
             "price": {
-              "mandi": 170,
-              "mandiChickenOnly": 110,
+              "mandi": 180,
+              "mandiChickenOnly": 120,
             }
           },
           {
             "item": "Shawaya Mandi",
             "image": shawayaMandi,
             "price": {
-              "mandi": 170,
-              "mandiChickenOnly": 110,
+              "mandi": 180,
+              "mandiChickenOnly": 120,
             }
           },
           {
             "item": "Kanthari Alfham Mandi",
             "image": kanthariMandi,
             "price": {
-              "mandi": 170,
-              "mandiChickenOnly": 110,
+              "mandi": 180,
+              "mandiChickenOnly": 120,
             }
           },
           {
             "item": "Peri Peri Alfham Mandi",
             "image": PeriPeriMandi,
             "price": {
-              "mandi": 180,
-              "mandiChickenOnly": 120,
+              "mandi": 190,
+              "mandiChickenOnly": 130,
             }
           },
           {
             "item": "Honey Chicken Mandi",
             "image": honeyMandi,
             "price": {
-              "mandi": 180,
-              "mandiChickenOnly": 120,
+              "mandi": 190,
+              "mandiChickenOnly": 130,
             }
           },
           {
             "item": "Beef Mandi",
             "image": beefMandi,
             "price": {
-              "mandi": 200,
-              "mandiChickenOnly": 130,
+              "mandi": 210,
+              "mandiChickenOnly": 140,
             }
           },
           {
             "item": "Beef Pollichath Mandi",
             "image": beefMandi,
             "price": {
-              "mandi": 210,
-              "mandiChickenOnly": 140,
+              "mandi": 220,
+              "mandiChickenOnly": 160,
             }
           },
           {
             "item": "Beef Kanthari Mandi",
             "image": beefMandi,
             "price": {
-              "mandi": 210,
-              "mandiChickenOnly": 140,
+              "mandi": 220,
+              "mandiChickenOnly": 160,
             }
           },
           {
             "item": "Mutton Mandi",
             "image": muttonMandi,
             "price": {
-              "mandi": 300,
-              "mandiChickenOnly": 230,
+              "mandi": 330,
+              "mandiChickenOnly": 260,
             }
           },
           {
             "item": "Mandi Rice Only",
             "price": {
-              "mandi": 80,
+              "mandi": 90,
             }
           },
           {
@@ -485,6 +547,76 @@ const menuData = {
             }
           }
         ],
+        rotties: [
+          {
+            item: "Thandoori rotti",
+            price: 20,
+          },
+          {
+            item: "Butter Nana",
+            price: 30,
+          },
+          {
+            item: "Plain Nana",
+            price: 25,
+          }
+        ],
+        "asianCuisine":  {
+          "heading": "Asian Cuisine",
+          "categories": [
+            {
+              "name": "Fried Rice",
+              "items": [
+                {
+                  "name": "Veg Fried Rice",
+                  "price": 130
+                },
+                {
+                  "name": "Egg Fried Rice",
+                  "price": 150
+                },
+                {
+                  "name": "Chicken Fried Rice",
+                  "price": 170
+                },
+                {
+                  "name": "Gobi Manchuriyan",
+                  "price": 80
+                }
+              ]
+            },
+            {
+              "name": "Noodles",
+              "items": [
+                {
+                  "name": "Veg Noodles",
+                  "price": 130
+                },
+                {
+                  "name": "Egg Noodles",
+                  "price": 150
+                },
+                {
+                  "name": "Chicken Noodles",
+                  "price": 170
+                }
+              ]
+            },
+            {
+              "name": "Chicken Dishes",
+              "items": [
+                {
+                  "name": "Garlic Chicken",
+                  "price": 150
+                },
+                {
+                  "name": "Chicken Kondattam",
+                  "price": 150
+                },
+              ]
+            }
+          ]
+        },
         Drinks: {
           heading: "Drinks",
           categories: [
@@ -511,7 +643,7 @@ const menuData = {
     },
     {
       "id": 4,
-      "name": "Therattammel",
+      "name": "Therattammal",
       "description": "A supper mandhi",
       "menu": {
         "Special Arabian Mandi": [
@@ -519,7 +651,7 @@ const menuData = {
             "item": "Chicken Mandi",
             "image": chickenMandi,
             "price": {
-              "mandi": 150,
+              "mandi": 160,
               "mandiChickenOnly": 90
             }
           },
@@ -527,86 +659,86 @@ const menuData = {
             "item": "Alfham Mandi",
             "image": alfamMandi,
             "price": {
-              "mandi": 170,
-              "mandiChickenOnly": 110,
+              "mandi": 180,
+              "mandiChickenOnly": 120,
             }
           },
           {
             "item": "Chicken Pollichath Mandi",
             "image": pollichathMandi,
             "price": {
-              "mandi": 170,
-              "mandiChickenOnly": 110,
+              "mandi": 180,
+              "mandiChickenOnly": 120,
             }
           },
           {
             "item": "Shawaya Mandi",
             "image": shawayaMandi,
             "price": {
-              "mandi": 170,
-              "mandiChickenOnly": 110,
+              "mandi": 180,
+              "mandiChickenOnly": 120,
             }
           },
           {
             "item": "Kanthari Alfham Mandi",
             "image": kanthariMandi,
             "price": {
-              "mandi": 170,
-              "mandiChickenOnly": 110,
+              "mandi": 180,
+              "mandiChickenOnly": 120,
             }
           },
           {
             "item": "Peri Peri Alfham Mandi",
             "image": PeriPeriMandi,
             "price": {
-              "mandi": 180,
-              "mandiChickenOnly": 120,
+              "mandi": 190,
+              "mandiChickenOnly": 130,
             }
           },
           {
             "item": "Honey Chicken Mandi",
             "image": honeyMandi,
             "price": {
-              "mandi": 180,
-              "mandiChickenOnly": 120,
+              "mandi": 190,
+              "mandiChickenOnly": 130,
             }
           },
           {
             "item": "Beef Mandi",
             "image": beefMandi,
             "price": {
-              "mandi": 200,
-              "mandiChickenOnly": 130,
+              "mandi": 210,
+              "mandiChickenOnly": 140,
             }
           },
           {
             "item": "Beef Pollichath Mandi",
             "image": beefMandi,
             "price": {
-              "mandi": 210,
-              "mandiChickenOnly": 140,
+              "mandi": 220,
+              "mandiChickenOnly": 160,
             }
           },
           {
             "item": "Beef Kanthari Mandi",
             "image": beefMandi,
             "price": {
-              "mandi": 210,
-              "mandiChickenOnly": 140,
+              "mandi": 220,
+              "mandiChickenOnly": 160,
             }
           },
           {
             "item": "Mutton Mandi",
             "image": muttonMandi,
             "price": {
-              "mandi": 300,
-              "mandiChickenOnly": 230,
+              "mandi": 330,
+              "mandiChickenOnly": 260,
             }
           },
           {
             "item": "Mandi Rice Only",
             "price": {
-              "mandi": 80,
+              "mandi": 90,
             }
           },
           {
@@ -630,6 +762,76 @@ const menuData = {
             }
           }
         ],
+        rotties: [
+          {
+            item: "Thandoori rotti",
+            price: 20,
+          },
+          {
+            item: "Butter Nana",
+            price: 30,
+          },
+          {
+            item: "Plain Nana",
+            price: 25,
+          }
+        ],
+        "asianCuisine":  {
+          "heading": "Asian Cuisine",
+          "categories": [
+            {
+              "name": "Fried Rice",
+              "items": [
+                {
+                  "name": "Veg Fried Rice",
+                  "price": 130
+                },
+                {
+                  "name": "Egg Fried Rice",
+                  "price": 150
+                },
+                {
+                  "name": "Chicken Fried Rice",
+                  "price": 170
+                },
+                {
+                  "name": "Gobi Manchuriyan",
+                  "price": 80
+                }
+              ]
+            },
+            {
+              "name": "Noodles",
+              "items": [
+                {
+                  "name": "Veg Noodles",
+                  "price": 130
+                },
+                {
+                  "name": "Egg Noodles",
+                  "price": 150
+                },
+                {
+                  "name": "Chicken Noodles",
+                  "price": 170
+                }
+              ]
+            },
+            {
+              "name": "Chicken Dishes",
+              "items": [
+                {
+                  "name": "Garlic Chicken",
+                  "price": 150
+                },
+                {
+                  "name": "Chicken Kondattam",
+                  "price": 150
+                },
+              ]
+            }
+          ]
+        },
         Drinks: {
           heading: "Drinks",
           categories: [
@@ -664,56 +866,56 @@ const menuData = {
             "item": "Chicken Mandi",
             "image": chickenMandi,
             "price": {
-              "mandi": 150,
-              "mandiChickenOnly": 110,
+              "mandi": 170,
+              "mandiChickenOnly": 100,
             }
           },
           {
             "item": "Alfham Mandi",
             "image": alfamMandi,
             "price": {
-              "mandi": 180,
-              "mandiChickenOnly": 110,
+              "mandi": 190,
+              "mandiChickenOnly": 120,
             }
           },
           {
             "item": "Shawaya Mandi",
             "image": shawayaMandi,
             "price": {
-              "mandi": 180,
-              "mandiChickenOnly": 110,
+              "mandi": 190,
+              "mandiChickenOnly": 120,
             }
           },
           {
             "item": "Chicken Pollichath Mandi",
             "image": pollichathMandi,
             "price": {
-              "mandi": 180,
-              "mandiChickenOnly": 110,
+              "mandi": 190,
+              "mandiChickenOnly": 120,
             }
           },
           {
             "item": "Kanthari Alfham Mandi",
             "image": kanthariMandi,
             "price": {
-              "mandi": 180,
-              "mandiChickenOnly": 110,
+              "mandi": 190,
+              "mandiChickenOnly": 120,
             }
           },
           {
             "item": "Honey Chicken Mandi",
             "image": honeyMandi,
             "price": {
-              "mandi": 190,
-              "mandiChickenOnly": 120,
+              "mandi": 200,
+              "mandiChickenOnly": 130,
             }
           },
           {
             "item": "Peri Peri Alfham Mandi",
             "image": PeriPeriMandi,
             "price": {
-              "mandi": 190,
-              "mandiChickenOnly": 120,
+              "mandi": 200,
+              "mandiChickenOnly": 130,
             }
           },
           {
@@ -728,30 +930,30 @@ const menuData = {
             "item": "Beef Pollichath Mandi",
             "image": beefMandi,
             "price": {
-              "mandi": 210,
-              "mandiChickenOnly": 140,
+              "mandi": 220,
+              "mandiChickenOnly": 160,
             }
           },
           {
             "item": "Beef Kanthari Mandi",
             "image": beefMandi,
             "price": {
-              "mandi": 210,
-              "mandiChickenOnly": 140,
+              "mandi": 220,
+              "mandiChickenOnly": 160,
             }
           },
           {
             "item": "Mutton Mandi",
             "image": muttonMandi,
             "price": {
-              "mandi": 310,
-              "mandiChickenOnly": 240,
+              "mandi": 330,
+              "mandiChickenOnly": 260,
             }
           },
           {
             "item": "Mandi Rice Only",
             "price": {
-              "mandi": 80,
+              "mandi": 90,
             }
           },
           {
@@ -768,13 +970,62 @@ const menuData = {
             "item": "Chicken Broasted",
             "image": broast,
             "portions": {
-              "Qtr": 120,
-              "half": 240,
-              "3/4": 360,
-              "full": 480
+              "Qtr": 130,
+              "half": 260,
+              "3/4": 390,
+              "full": 500
             }
           }
         ],
+        rotties: [
+          {
+            item: "Thandoori rotti",
+            price: 20,
+          },
+          {
+            item: "Plain Nana",
+            price: 25,
+          },
+          {
+            item: "Butter Nana",
+            price: 30,
+          },
+        ],
+        "asianCuisine":  {
+          "heading": "Asian Cuisine",
+          "categories": [
+            {
+              "name": "Noodles",
+              "items": [
+                {
+                  "name": "Veg Noodles",
+                  "price": 130
+                },
+                {
+                  "name": "Egg Noodles",
+                  "price": 150
+                },
+                {
+                  "name": "Chicken Noodles",
+                  "price": 170
+                }
+              ]
+            },
+            {
+              "name": "Chicken Dishes",
+              "items": [
+                {
+                  "name": "Garlic Chicken",
+                  "price": 150
+                },
+                {
+                  "name": "Chicken Kondattam",
+                  "price": 150
+                },
+              ]
+            }
+          ]
+        },
         Drinks: {
           heading: "Drinks",
           categories: [
@@ -809,7 +1060,7 @@ const menuData = {
             "item": "Chicken Mandi",
             "image": chickenMandi,
             "price": {
-              "mandi": 150,
+              "mandi": 160,
               "mandiChickenOnly": 90
             }
           },
@@ -817,86 +1068,86 @@ const menuData = {
             "item": "Alfham Mandi",
             "image": alfamMandi,
             "price": {
-              "mandi": 170,
-              "mandiChickenOnly": 110,
+              "mandi": 180,
+              "mandiChickenOnly": 120,
             }
           },
           {
             "item": "Chicken Pollichath Mandi",
             "image": pollichathMandi,
             "price": {
-              "mandi": 170,
-              "mandiChickenOnly": 110,
+              "mandi": 180,
+              "mandiChickenOnly": 120,
             }
           },
           {
             "item": "Shawaya Mandi",
             "image": shawayaMandi,
             "price": {
-              "mandi": 170,
-              "mandiChickenOnly": 110,
+              "mandi": 180,
+              "mandiChickenOnly": 120,
             }
           },
           {
             "item": "Kanthari Alfham Mandi",
             "image": kanthariMandi,
             "price": {
-              "mandi": 170,
-              "mandiChickenOnly": 110,
+              "mandi": 180,
+              "mandiChickenOnly": 120,
             }
           },
           {
             "item": "Peri Peri Alfham Mandi",
             "image": PeriPeriMandi,
             "price": {
-              "mandi": 180,
-              "mandiChickenOnly": 120,
+              "mandi": 190,
+              "mandiChickenOnly": 130,
             }
           },
           {
             "item": "Honey Chicken Mandi",
             "image": honeyMandi,
             "price": {
-              "mandi": 180,
-              "mandiChickenOnly": 120,
+              "mandi": 190,
+              "mandiChickenOnly": 130,
             }
           },
           {
             "item": "Beef Mandi",
             "image": beefMandi,
             "price": {
-              "mandi": 200,
-              "mandiChickenOnly": 130,
+              "mandi": 210,
+              "mandiChickenOnly": 140,
             }
           },
           {
             "item": "Beef Pollichath Mandi",
             "image": beefMandi,
             "price": {
-              "mandi": 210,
-              "mandiChickenOnly": 140,
+              "mandi": 220,
+              "mandiChickenOnly": 160,
             }
           },
           {
             "item": "Beef Kanthari Mandi",
             "image": beefMandi,
             "price": {
-              "mandi": 210,
-              "mandiChickenOnly": 140,
+              "mandi": 220,
+              "mandiChickenOnly": 160,
             }
           },
           {
             "item": "Mutton Mandi",
             "image": muttonMandi,
             "price": {
-              "mandi": 300,
-              "mandiChickenOnly": 230,
+              "mandi": 330,
+              "mandiChickenOnly": 260,
             }
           },
           {
             "item": "Mandi Rice Only",
             "price": {
-              "mandi": 80,
+              "mandi": 90,
             }
           },
           {
@@ -920,6 +1171,76 @@ const menuData = {
             }
           }
         ],
+        rotties: [
+          {
+            item: "Thandoori rotti",
+            price: 20,
+          },
+          {
+            item: "Butter Nana",
+            price: 30,
+          },
+          {
+            item: "Plain Nana",
+            price: 25,
+          }
+        ],
+        "asianCuisine":  {
+          "heading": "Asian Cuisine",
+          "categories": [
+            {
+              "name": "Fried Rice",
+              "items": [
+                {
+                  "name": "Veg Fried Rice",
+                  "price": 130
+                },
+                {
+                  "name": "Egg Fried Rice",
+                  "price": 150
+                },
+                {
+                  "name": "Chicken Fried Rice",
+                  "price": 170
+                },
+                {
+                  "name": "Gobi Manchuriyan",
+                  "price": 80
+                }
+              ]
+            },
+            {
+              "name": "Noodles",
+              "items": [
+                {
+                  "name": "Veg Noodles",
+                  "price": 130
+                },
+                {
+                  "name": "Egg Noodles",
+                  "price": 150
+                },
+                {
+                  "name": "Chicken Noodles",
+                  "price": 170
+                }
+              ]
+            },
+            {
+              "name": "Chicken Dishes",
+              "items": [
+                {
+                  "name": "Garlic Chicken",
+                  "price": 150
+                },
+                {
+                  "name": "Chicken Kondattam",
+                  "price": 150
+                },
+              ]
+            }
+          ]
+        },
         Drinks: {
           heading: "Drinks",
           categories: [
@@ -1091,7 +1412,7 @@ const menuData = {
     },
     {
       "id": 8,
-      "name": "Kizhisseri",
+      "name": "Kizhissery",
       "description": "A supper mandhi",
       "menu": {
         "Special Arabian Mandi": [
@@ -1099,7 +1420,7 @@ const menuData = {
             "item": "Chicken Mandi",
             "image": chickenMandi,
             "price": {
-              "mandi": 150,
+              "mandi": 160,
               "mandiChickenOnly": 90
             }
           },
@@ -1107,86 +1428,86 @@ const menuData = {
             "item": "Alfham Mandi",
             "image": alfamMandi,
             "price": {
-              "mandi": 170,
-              "mandiChickenOnly": 110,
+              "mandi": 180,
+              "mandiChickenOnly": 120,
             }
           },
           {
             "item": "Chicken Pollichath Mandi",
             "image": pollichathMandi,
             "price": {
-              "mandi": 170,
-              "mandiChickenOnly": 110,
+              "mandi": 180,
+              "mandiChickenOnly": 120,
             }
           },
           {
             "item": "Shawaya Mandi",
             "image": shawayaMandi,
             "price": {
-              "mandi": 170,
-              "mandiChickenOnly": 110,
+              "mandi": 180,
+              "mandiChickenOnly": 120,
             }
           },
           {
             "item": "Kanthari Alfham Mandi",
             "image": kanthariMandi,
             "price": {
-              "mandi": 170,
-              "mandiChickenOnly": 110,
+              "mandi": 180,
+              "mandiChickenOnly": 120,
             }
           },
           {
             "item": "Peri Peri Alfham Mandi",
             "image": PeriPeriMandi,
             "price": {
-              "mandi": 180,
-              "mandiChickenOnly": 120,
+              "mandi": 190,
+              "mandiChickenOnly": 130,
             }
           },
           {
             "item": "Honey Chicken Mandi",
             "image": honeyMandi,
             "price": {
-              "mandi": 180,
-              "mandiChickenOnly": 120,
+              "mandi": 190,
+              "mandiChickenOnly": 130,
             }
           },
           {
             "item": "Beef Mandi",
             "image": beefMandi,
             "price": {
-              "mandi": 200,
-              "mandiChickenOnly": 130,
+              "mandi": 210,
+              "mandiChickenOnly": 140,
             }
           },
           {
             "item": "Beef Pollichath Mandi",
             "image": beefMandi,
             "price": {
-              "mandi": 210,
-              "mandiChickenOnly": 140,
+              "mandi": 220,
+              "mandiChickenOnly": 160,
             }
           },
           {
             "item": "Beef Kanthari Mandi",
             "image": beefMandi,
             "price": {
-              "mandi": 210,
-              "mandiChickenOnly": 140,
+              "mandi": 220,
+              "mandiChickenOnly": 160,
             }
           },
           {
             "item": "Mutton Mandi",
             "image": muttonMandi,
             "price": {
-              "mandi": 300,
-              "mandiChickenOnly": 230,
+              "mandi": 330,
+              "mandiChickenOnly": 260,
             }
           },
           {
             "item": "Mandi Rice Only",
             "price": {
-              "mandi": 80,
+              "mandi": 90,
             }
           },
           {
@@ -1210,6 +1531,76 @@ const menuData = {
             }
           }
         ],
+        rotties: [
+          {
+            item: "Thandoori rotti",
+            price: 20,
+          },
+          {
+            item: "Butter Nana",
+            price: 30,
+          },
+          {
+            item: "Plain Nana",
+            price: 25,
+          }
+        ],
+        "asianCuisine":  {
+          "heading": "Asian Cuisine",
+          "categories": [
+            {
+              "name": "Fried Rice",
+              "items": [
+                {
+                  "name": "Veg Fried Rice",
+                  "price": 130
+                },
+                {
+                  "name": "Egg Fried Rice",
+                  "price": 150
+                },
+                {
+                  "name": "Chicken Fried Rice",
+                  "price": 170
+                },
+                {
+                  "name": "Gobi Manchuriyan",
+                  "price": 80
+                }
+              ]
+            },
+            {
+              "name": "Noodles",
+              "items": [
+                {
+                  "name": "Veg Noodles",
+                  "price": 130
+                },
+                {
+                  "name": "Egg Noodles",
+                  "price": 150
+                },
+                {
+                  "name": "Chicken Noodles",
+                  "price": 170
+                }
+              ]
+            },
+            {
+              "name": "Chicken Dishes",
+              "items": [
+                {
+                  "name": "Garlic Chicken",
+                  "price": 150
+                },
+                {
+                  "name": "Chicken Kondattam",
+                  "price": 150
+                },
+              ]
+            }
+          ]
+        },
         Drinks: {
           heading: "Drinks",
           categories: [
@@ -1233,7 +1624,7 @@ const menuData = {
           ],
         },
       }
-    }
+    },
   ]
 }
 
